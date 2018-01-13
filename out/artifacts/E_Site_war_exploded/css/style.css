@@ -1,9 +1,19 @@
 body{
-background-color: silver;
+/*background-color: silver;*/
 }
-/*resizing search bar*/
-#searchBox{
+/*taking care of input search box*/
+input[type="text"]{
+    width: 500px;
+    height: 41.5px;
+    padding-right: 50px;
+}
+/*/*taking care of input button search*/
+input[type="submit"]{
+    margin-left: -65px;
+    height:40px;
+    width: 60px;
+    background: #c4ffcd;
+    color: #ffffff;
     border: none;
-    height: 50px;
-    width: 300px;
+    -webkit-appearance: none;
 }

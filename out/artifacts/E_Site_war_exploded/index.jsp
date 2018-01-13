@@ -17,7 +17,10 @@
   <header>
     <img src="images/logo1.png" id="logo" alt="sign-up" height="100" width="100">
   </header>
-  <input type="text" name="search" id="searchBox" placeholder="Enter keyword"><button id="searchBtn">Search</button></input><label for="searchBox"><span><img src="images/search.png" id="searchSymbol" height="30" width="30"></span></label>
+  <div id="searchGroup">
+    <input type="text" name="search" id="searchBox" placeholder="Search" required>
+    <input type="submit" name="searchSubmit" id="searchSubmit" value="Search">
+  </div>
   <nav>
     <ul>
       <li><a href="">Home</a></li>
