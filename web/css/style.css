@@ -1,14 +1,29 @@
 body{
 /*background-color: silver;*/
+    margin: auto;
 }
 /*header size*/
 header{
-    height: 100px;
+    height: 90px;
     background: #f7f6ff;
+    text-align: center;
+}
+/*taking of logo and name arrange them on the same line*/
+header li {
+    float: left;
+    margin-top: 15px;
+}
+/*menu icon positioning*/
+#menu-icon{
+    margin-top: 7px;
 }
 /*logo marge*/
 #logo{
-    margin-left: 30px;
+    margin-left: 60px;
+}
+/*center search box*/
+#searchGroup{
+    margin-left: 100px;
 }
 /*taking care of input search box*/
 input[type="text"]{
@@ -26,11 +41,8 @@ input[type="submit"]{
     border: none;
     -webkit-appearance: none;
 }
-/*taking of logo and name arrange them on the same line*/
-header li {
-    float: left;
-}
-/*center search box*/
-#searchGroup{
-    text-align: center;
+/*move upload icon to the right*/
+#upload-icon{
+    margin-left: 60px;
+    margin-top: 10px;
 }
