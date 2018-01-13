@@ -1,0 +1,9 @@
+body{
+background-color: silver;
+}
+/*resizing search bar*/
+#searchBox{
+    border: none;
+    height: 20px;
+    width: 300px;
+}
