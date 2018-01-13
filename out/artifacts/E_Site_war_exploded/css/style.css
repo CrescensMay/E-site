@@ -33,7 +33,7 @@ input[type="text"]{
 }
 /*taking care of input button search*/
 input[type="submit"]{
-    margin-left: -66px;
+    margin-left: -65px;
     height:40px;
     width: 60px;
     background: #c4ffcd;
@@ -41,8 +41,25 @@ input[type="submit"]{
     border: none;
     -webkit-appearance: none;
 }
+/*button on hover change background color*/
+#searchSubmit:hover{
+    background: black;
+}
 /*move upload icon to the right*/
 #upload-icon{
     margin-left: 60px;
     margin-top: 10px;
+}
+/*change nav background color*/
+nav{
+    position: absolute;
+    background: #f7f6ff;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 300px;
+}
+/*design menu item*/
+.menu-item{
+    width: 200px;
+    height: auto;
 }
