@@ -15,7 +15,7 @@
   </head>
   <body>
   <header>
-    <img src="images/logo1.png" id="logo" alt="sign-up" height="100" width="100">
+    <img src="images/logo1.png" id="logo" alt="sign-up" height="90" width="90">
   </header>
   <div id="searchGroup">
     <input type="text" name="search" id="searchBox" placeholder="Search" required>
@@ -28,8 +28,8 @@
       <li><a href="">TV-Shows</a></li>
       <li><a href="">Music</a></li>
       <li><a href="">E-Books</a></li>
-      <li><a href="">Upload</a>
-        <ul>
+      <li id="upload-links"><a href="">Upload</a>
+        <ul id="upload-children">
           <li><a href="">Movie</a></li>
           <li><a href="">TV-Show</a></li>
           <li><a href="">Music</a></li>

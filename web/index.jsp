@@ -28,8 +28,8 @@
       <li><a href="">TV-Shows</a></li>
       <li><a href="">Music</a></li>
       <li><a href="">E-Books</a></li>
-      <li><a href="">Upload</a>
-        <ul>
+      <li id="upload-links"><a href="">Upload</a>
+        <ul id="upload-children">
           <li><a href="">Movie</a></li>
           <li><a href="">TV-Show</a></li>
           <li><a href="">Music</a></li>
