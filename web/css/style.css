@@ -1,19 +1,36 @@
 body{
 /*background-color: silver;*/
 }
+/*header size*/
+header{
+    height: 100px;
+    background: #f7f6ff;
+}
+/*logo marge*/
+#logo{
+    margin-left: 30px;
+}
 /*taking care of input search box*/
 input[type="text"]{
-    width: 500px;
+    width: 600px;
     height: 41.5px;
     padding-right: 50px;
 }
-/*/*taking care of input button search*/
+/*taking care of input button search*/
 input[type="submit"]{
-    margin-left: -65px;
+    margin-left: -66px;
     height:40px;
     width: 60px;
     background: #c4ffcd;
     color: #ffffff;
     border: none;
     -webkit-appearance: none;
+}
+/*taking of logo and name arrange them on the same line*/
+header li {
+    float: left;
+}
+/*center search box*/
+#searchGroup{
+    text-align: center;
 }

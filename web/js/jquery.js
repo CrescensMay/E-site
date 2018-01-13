@@ -1,6 +1,3 @@
-$('#logo').click(function () {
-    $(this).hide();
-});
 
 //hiding all children except the child link
 $('#upload-children').hide();

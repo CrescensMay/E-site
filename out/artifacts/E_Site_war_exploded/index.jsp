@@ -15,7 +15,11 @@
   </head>
   <body>
   <header>
-    <img src="images/logo1.png" id="logo" alt="sign-up" height="90" width="90">
+    <ul>
+      <li><img src="images/menu3.png" id="menu" height="30" width="30" alt="menu-icon"></li>
+      <li><img src="images/logo1.png" id="logo" alt="sign-up" height="40" width="40"></li>
+      <li><p>eTube</p></li>
+    </ul>
   </header>
   <div id="searchGroup">
     <input type="text" name="search" id="searchBox" placeholder="Search" required>
