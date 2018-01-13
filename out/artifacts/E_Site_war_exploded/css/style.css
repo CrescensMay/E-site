@@ -37,13 +37,14 @@ input[type="submit"]{
     height:40px;
     width: 60px;
     background: #c4ffcd;
-    color: #ffffff;
+    color: #000;
     border: none;
     -webkit-appearance: none;
 }
 /*button on hover change background color*/
 #searchSubmit:hover{
     background: black;
+    color: #ffffff;
 }
 /*move upload icon to the right*/
 #upload-icon{
@@ -62,4 +63,27 @@ nav{
 .menu-item{
     width: 200px;
     height: auto;
+}
+
+/*rotate menu icon when clicked*/
+.rotateEffect{
+    transform: rotate(50deg);
+    transition: .8ms;
+}
+
+/*add icons before each menu item*/
+ul li.home a{
+    background-image: url("/images/home2.png");
+}
+ul li.movies a{
+    background-image: url("/images/movie2.png");
+}
+ul li.music a{
+    background-image: url("/images/music1.png");
+}
+ul li.tv-show a{
+    border-image: url("/images/tvshow2.png");
+}
+ul li.e-book a{
+    border-image: url("/images/ebook1.png");
 }

@@ -18,8 +18,11 @@ $('.menu-item').mouseenter(function () {
     $(this).css('background-color','#f7f6ff');
 });
 
-//toggle menu when menu button clicked
+//toggle menu when menu button clicked and handle rotation of menu icon
 $('#menu-icon').click(function () {
+    $(this).toggleClass('rotateEffect');
     $('nav').toggle(200);
 });
+
+
 

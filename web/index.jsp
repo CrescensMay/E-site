@@ -30,11 +30,11 @@
   </header>
   <nav>
     <ul>
-      <li class="menu-item"><a href="">Home</a></li>
-      <li class="menu-item"><a href="">Movies</a></li>
-      <li class="menu-item"><a href="">TV-Shows</a></li>
-      <li class="menu-item"><a href="">Music</a></li>
-      <li class="menu-item"><a href="">E-Books</a></li>
+      <li class="menu-item home"><a href="">Home</a></li>
+      <li class="menu-item movies"><a href="">Movies</a></li>
+      <li class="menu-item tv-show"><a href="">TV-Shows</a></li>
+      <li class="menu-item music"><a href="">Music</a></li>
+      <li class="menu-item e-book"><a href="">E-Books</a></li>
       <%--<li id="upload-links"><a href="">Upload</a>--%>
         <%--<ul id="upload-children">--%>
           <%--<li><a href="">Movie</a></li>--%>
