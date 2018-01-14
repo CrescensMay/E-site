@@ -22,7 +22,7 @@ header button{
     background: #c4ffcd;
     margin-left: 50px;
     margin-top: 8px;
-    font-size: 18px;
+    font-size: 16px;
 }
 /*apps links design*/
 #apps-links{
@@ -40,6 +40,10 @@ header button{
 /*menu icon positioning*/
 #menu-icon{
     margin-top: 7px;
+}
+/*on hover cursor pointer*/
+#menu-icon:hover{
+    cursor: pointer;
 }
 /*logo marge*/
 #logo{
@@ -81,6 +85,11 @@ input[type="submit"]{
     margin-left: 30px;
     margin-top: 8px;
 }
+/*on hover cursor pointer*/
+#apps-icon:hover{
+    cursor: pointer;
+}
+
 /*change nav background color*/
 nav{
     position: absolute;
@@ -106,7 +115,7 @@ nav a{
 /*rotate menu icon when clicked function-class at the same time*/
 .rotateEffect{
     transform: rotate(45deg);
-    transition: .8ms;
+    transition: .3s;
 }
 
 /*add icons before each menu item*/
@@ -139,7 +148,7 @@ nav a{
     display: block;
     min-height: 20px;
     background-repeat: no-repeat;
-    background-size: 22px 22px;
+    background-size: 24px 24px;
     padding: 0 0 0 30px;
     margin: 0 0 10px;
 }

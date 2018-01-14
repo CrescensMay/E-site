@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0d337d-2fbf-4277-b531-c2e351418e01" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/header.html" afterPath="$PROJECT_DIR$/web/html/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.js" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -54,8 +55,8 @@
       <file leaf-file-name="apps.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/html/apps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="0">
+              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -64,8 +65,8 @@
       <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state relative-caret-position="296">
+              <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -74,8 +75,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="206">
+              <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -106,8 +107,8 @@
         <option value="$PROJECT_DIR$/web/js/script.js" />
         <option value="$PROJECT_DIR$/web/html/nav.html" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/html/apps.html" />
         <option value="$PROJECT_DIR$/web/html/header.html" />
+        <option value="$PROJECT_DIR$/web/html/apps.html" />
         <option value="$PROJECT_DIR$/web/js/jquery.js" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
@@ -127,7 +128,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="609" />
+    <option name="x" value="558" />
     <option name="y" value="23" />
     <option name="width" value="808" />
     <option name="height" value="701" />
@@ -452,15 +453,15 @@
       <workItem from="1515840147987" duration="642000" />
       <workItem from="1515841550176" duration="1092000" />
       <workItem from="1515842885270" duration="4137000" />
-      <workItem from="1515854926091" duration="43652000" />
+      <workItem from="1515854926091" duration="47261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49523000" />
+    <option name="totallyTimeSpent" value="53132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="609" y="23" width="808" height="701" extended-state="0" />
+    <frame x="558" y="23" width="808" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -715,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/apps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -741,16 +734,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        <state relative-caret-position="296">
+          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/apps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="206">
+          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           <folding />
         </state>
       </provider>

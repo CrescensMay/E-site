@@ -39,6 +39,7 @@ $('#menu-icon').click(function () {
 
 //toggle apps menu on click
 $('#apps-icon').click(function () {
+    $(this).toggleClass('rotateEffect');
     $('#apps-links').toggle(150);
 });
 
