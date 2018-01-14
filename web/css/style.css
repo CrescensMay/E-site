@@ -22,16 +22,16 @@ header button{
     background: #c4ffcd;
     margin-left: 50px;
     margin-top: 8px;
-    font-size: 18px;
+    font-size: 16px;
 }
 /*apps links design*/
 #apps-links{
     position: absolute;
     background: #f7f6ff;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     line-height: 35px;
-    width: 300px;
-    left: 65%;
+    width: 250px;
+    left: 70%;
 }
 /*change color to black*/
 #apps-links a{
@@ -85,7 +85,7 @@ input[type="submit"]{
 nav{
     position: absolute;
     background: #f7f6ff;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     line-height: 35px;
     width: 300px;
 }
@@ -95,12 +95,12 @@ nav a{
 }
 /*design menu item*/
 .menu-item{
-    width: 250px;
+    width: auto;
     /*height: auto;*/
 }
 /*design app item*/
 .app-item{
-    width: 250px;
+    width:auto;
 }
 
 /*rotate menu icon when clicked function-class at the same time*/
@@ -132,4 +132,26 @@ nav a{
 }
 .menu-links li.book a{
     background-image: url("/images/ebook1.png");
+}
+
+/*add icons before each menu item*/
+#apps-links ul a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+#apps-links ul li.youtv a{
+    background-image: url("/images/youtv1.png");
+}
+#apps-links ul li.yougame a{
+    background-image: url("/images/yougame2.jpg");
+}
+#apps-links ul li.youmusic a{
+    background-image: url("/images/youmusic.png");
+}
+#apps-links ul li.youkids a{
+    background-image: url("/images/youkids2.jpg");
 }

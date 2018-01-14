@@ -1,8 +1,12 @@
 
 //hiding all children except the child link
 $('#upload-children').hide();
+
 //hiding menu at the beginning(nav)
 $('nav').hide();
+
+//hiding the apps menu
+$('#apps-links').hide();
 
 //showing children on mouseover and hiding on mouseleave
 $("#upload-links").mouseenter(function () {
@@ -30,7 +34,12 @@ $('.app-item').mouseenter(function () {
 //toggle menu when menu button clicked and handle rotation of menu icon
 $('#menu-icon').click(function () {
     $(this).toggleClass('rotateEffect');
-    $('nav').toggle(200);
+    $('nav').toggle(150);
+});
+
+//toggle apps menu on click
+$('#apps-icon').click(function () {
+    $('#apps-links').toggle(150);
 });
 
 
