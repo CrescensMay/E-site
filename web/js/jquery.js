@@ -13,7 +13,7 @@ $("#upload-links").mouseenter(function () {
 
 //on mouseover change menu-item background color
 $('.menu-item').mouseenter(function () {
-    $(this).css('background-color','#dfdee6');
+    $(this).css('background-color','#fff');
 }).mouseleave(function () {
     $(this).css('background-color','#f7f6ff');
 });

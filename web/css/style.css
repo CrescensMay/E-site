@@ -1,10 +1,13 @@
 body{
 /*background-color: silver;*/
-    margin: auto;
+    /*margin: auto;*/
 }
 /*header size*/
 header{
-    height: 90px;
+    /*position: fixed;*/
+    /*bottom: 13px;*/
+    height: 80px;
+    width: 100%;
     background: #f7f6ff;
     text-align: center;
 }
@@ -56,34 +59,42 @@ nav{
     position: absolute;
     background: #f7f6ff;
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 35px;
     width: 300px;
 }
 /*design menu item*/
 .menu-item{
-    width: 200px;
-    height: auto;
+    width: 250px;
+    /*height: auto;*/
 }
 
-/*rotate menu icon when clicked*/
+/*rotate menu icon when clicked function-class at the same time*/
 .rotateEffect{
     transform: rotate(50deg);
     transition: .8ms;
 }
 
 /*add icons before each menu item*/
-ul li.home a{
+.menu-links a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+.menu-links li.home a{
     background-image: url("/images/home2.png");
 }
-ul li.movies a{
-    background-image: url("/images/movie2.png");
+.menu-links li.movies a{
+    background-image: url("/images/movie1.png");
 }
-ul li.music a{
+.menu-links li.show a{
+    background-image: url("/images/tvshow4.png");
+}
+.menu-links li.music a{
     background-image: url("/images/music1.png");
 }
-ul li.tv-show a{
-    border-image: url("/images/tvshow2.png");
-}
-ul li.e-book a{
-    border-image: url("/images/ebook1.png");
+.menu-links li.book a{
+    background-image: url("/images/ebook1.png");
 }
