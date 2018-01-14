@@ -14,15 +14,20 @@ header{
 /*taking of logo and name arrange them on the same line*/
 header li {
     float: left;
-    margin-top: 15px;
+    margin-top: 20px;
 }
-/*design header login button*/
-header button{
-    border: none;
-    background: #c4ffcd;
-    margin-left: 50px;
-    margin-top: 8px;
-    font-size: 16px;
+/*design header sign in button*/
+#sign-in {
+    position: relative;
+    /*background: #c4ffcd;*/
+    margin-left: 70px;
+    top:10px;
+    /*margin-top: 25px;*/
+    font-size: 18px;
+    color: #000;
+    /*height:60px;*/
+    /*width: 100px;*/
+    /*border-radius: 4px;*/
 }
 /*apps links design*/
 #apps-links{
