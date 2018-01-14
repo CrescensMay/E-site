@@ -14,6 +14,15 @@ $("#upload-links").mouseenter(function () {
 //on mouseover change menu-item background color
 $('.menu-item').mouseenter(function () {
     $(this).css('background-color','#fff');
+    $(this).css('cursor','pointer');
+}).mouseleave(function () {
+    $(this).css('background-color','#f7f6ff');
+});
+
+//on mouseover change apps-item background color
+$('.app-item').mouseenter(function () {
+    $(this).css('background-color','#fff');
+    $(this).css('cursor','pointer');
 }).mouseleave(function () {
     $(this).css('background-color','#f7f6ff');
 });
@@ -23,6 +32,8 @@ $('#menu-icon').click(function () {
     $(this).toggleClass('rotateEffect');
     $('nav').toggle(200);
 });
+
+
 
 
 

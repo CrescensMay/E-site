@@ -16,6 +16,27 @@ header li {
     float: left;
     margin-top: 15px;
 }
+/*design header login button*/
+header button{
+    border: none;
+    background: #c4ffcd;
+    margin-left: 50px;
+    margin-top: 8px;
+    font-size: 18px;
+}
+/*apps links design*/
+#apps-links{
+    position: absolute;
+    background: #f7f6ff;
+    letter-spacing: 1px;
+    line-height: 35px;
+    width: 300px;
+    left: 65%;
+}
+/*change color to black*/
+#apps-links a{
+    color: #000;
+}
 /*menu icon positioning*/
 #menu-icon{
     margin-top: 7px;
@@ -48,11 +69,17 @@ input[type="submit"]{
 #searchSubmit:hover{
     background: black;
     color: #ffffff;
+    cursor: pointer;
 }
 /*move upload icon to the right*/
 #upload-icon{
-    margin-left: 60px;
+    margin-left: 200px;
     margin-top: 10px;
+}
+/*move apps icon to the right*/
+#apps-icon{
+    margin-left: 30px;
+    margin-top: 8px;
 }
 /*change nav background color*/
 nav{
@@ -62,15 +89,23 @@ nav{
     line-height: 35px;
     width: 300px;
 }
+/*change nav link color to black*/
+nav a{
+    color: #000;
+}
 /*design menu item*/
 .menu-item{
     width: 250px;
     /*height: auto;*/
 }
+/*design app item*/
+.app-item{
+    width: 250px;
+}
 
 /*rotate menu icon when clicked function-class at the same time*/
 .rotateEffect{
-    transform: rotate(50deg);
+    transform: rotate(45deg);
     transition: .8ms;
 }
 
