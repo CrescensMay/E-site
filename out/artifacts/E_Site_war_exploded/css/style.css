@@ -24,7 +24,7 @@ header li {
     font-size: 18px;
     color: #000;
 }
-/*change sign in button color on hover*/
+/*change sign in link color on hover*/
 #sign-in:hover{
     color: red;
 }
@@ -54,7 +54,7 @@ header li {
     margin-left: 60px;
 }
 /*center search box*/
-#searchGroup{
+#search-form{
     margin-left: 100px;
 }
 /*taking care of input search box*/
@@ -101,6 +101,7 @@ input[type="submit"]{
     letter-spacing: .5px;
     line-height: 35px;
     width: 300px;
+    z-index: 1;
 }
 /*change nav link color to black*/
 #nav-footer a{
@@ -147,6 +148,10 @@ input[type="submit"]{
     background-image: url("/images/ebook1.png");
 }
 
+/*set apps div on top of video container*/
+#apps-links{
+    z-index: 1;
+}
 /*add icons before each menu item*/
 #apps-links ul a{
     display: block;
@@ -179,8 +184,14 @@ footer li a:hover{
 }
 
 /*taking care of section video*/
-section{
-    /*width: 300px;*/
-    /*height: auto;*/
+#video-container{
+    position: relative;
+    z-index: 0;
+    padding: 30px 30px 30px 30px;
     background: #000;
+    color: white;
+}
+/*toggle video container class to be used when menu icon is clicked */
+.toggleContainer{
+    margin-left: 300px;
 }

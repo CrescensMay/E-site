@@ -4,10 +4,10 @@
         <li><img src="/images/logo1.png" id="logo" alt="sign-up" height="45" width="45"></li>
         <li><p>MySite</p></li>
         <li>
-            <div id="searchGroup">
-                <input type="text" name="search" id="searchBox" placeholder="Enter search keyword" required>
-                <input type="submit" name="searchSubmit" id="searchSubmit" value="Search" title="Search">
-            </div>
+            <form id="search-form" name="search-form" onsubmit="return search()">
+                <input type="text" name="search" id="searchField" placeholder="Enter search keyword" required>
+                <input type="submit" name="searchBtn" id="searchSubmit" value="Search" title="Search">
+            </form>
         </li>
         <li><a href=""><img src="/images/upload2.png" id="upload-icon" height=20" width="20" alt="upload-icon" title="Upload"></a></li>
         <li><img src="/images/app3.png" id="apps-icon" height="25" width="25" title="Youtube Apps"></li>

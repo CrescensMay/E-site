@@ -37,10 +37,8 @@ $('#menu-icon').click(function () {
     $(this).toggleClass('rotateEffect');
     $navFooter.toggle(150);
 
-    //taking care of section video by reducing the size of it
-    var width = $section.width() - $navFooter.width();
-    // alert($section.width());
-    $section.style.marginLeft = "500px";
+    //toggle video container size when menu icon is clicked
+    $section.toggleClass('toggleContainer');
 });
 
 //toggle apps menu on click
