@@ -1,4 +1,5 @@
-
+var $navFooter = $('#nav-footer');
+var $section = $('#video-container');
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -34,7 +35,12 @@ $('.app-item').mouseenter(function () {
 //toggle menu when menu button clicked and handle rotation of menu icon
 $('#menu-icon').click(function () {
     $(this).toggleClass('rotateEffect');
-    $('nav').toggle(150);
+    $navFooter.toggle(150);
+
+    //taking care of section video by reducing the size of it
+    var width = $section.width() - $navFooter.width();
+    // alert($section.width());
+    $section.style.marginLeft = "500px";
 });
 
 //toggle apps menu on click
