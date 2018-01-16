@@ -1,6 +1,7 @@
 var $results = $('#result-video');
 var $buttons = $('#btn');
 var $search = $('#searchField');
+var $heading = $('.video-heading');
 var query;
 
 $(function () {
@@ -57,14 +58,14 @@ function getOutput(item) {
     var videoDate = item.snippet.publishedAt;
 
     //Build ouptput string
-    var output = '<li>' +
+    var output = '<li class="list-item">' +
         '<div class="list-left">' +
         '<img src="' + thumb + '">' +
         '</div>' +
         '<div class="list-right">' +
         '<h3>' + title + '</h3>' +
         '<small>By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
-        // '<p>' + description + '</p>' +
+        '<p>' + description + '</p>' +
         '</div>' +
         '</li>' +
         '<div class="clearfix"></div>' +

@@ -187,11 +187,39 @@ footer li a:hover{
 #video-container{
     position: relative;
     z-index: 0;
-    padding: 30px 30px 30px 30px;
-    background: #000;
-    color: white;
+    padding: 20px 20px 20px 20px;
+    background: #b6e6b7;
+    color: #ffffff;
 }
 /*toggle video container class to be used when menu icon is clicked */
 .toggleContainer{
     margin-left: 300px;
+}
+/*design result list*/
+#result-video li{
+    border-bottom: 1px #ccc dotted;
+    overflow: auto;
+}
+/*work with list left from data output*/
+.list-left{
+    float: left;
+    width: 20%;
+}
+.list-left img{
+    width: 100%;
+    padding: 3px;
+    border: solid #ccc 1px;
+}
+/*work with list right from data output*/
+.list-right{
+    float: right;
+    width: 78%;
+}
+/*resize the paragraph*/
+.list-right p{
+    width: 50%;
+}
+/*clearfix underneath each video*/
+.clearfix{
+    height: 10px;
 }
