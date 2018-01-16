@@ -17,9 +17,7 @@
   <jsp:include page="html/header.html"/>
   <jsp:include page="html/apps.html"/>
   <jsp:include page="html/nav.html"/>
-  <div>
-
-  </div>
+  <jsp:include page="html/results.html"/>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
   </body>

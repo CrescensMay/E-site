@@ -169,3 +169,17 @@ nav a{
 #apps-links ul li.youkids a{
     background-image: url("/images/youkids2.jpg");
 }
+/*footer designing and positioning*/
+footer li{
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+}
+footer li a:hover{
+    text-decoration: underline;
+}
+
+/*taking care of section video*/
+section{
+    background-color: #000;
+}
