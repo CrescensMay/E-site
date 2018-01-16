@@ -1,5 +1,6 @@
 var $navFooter = $('#nav-footer');
 var $section = $('#video-container');
+
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -46,8 +47,3 @@ $('#apps-icon').click(function () {
     $(this).toggleClass('rotateEffect');
     $('#apps-links').toggle(150);
 });
-
-
-
-
-

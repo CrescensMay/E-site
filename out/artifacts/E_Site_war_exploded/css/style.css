@@ -53,17 +53,17 @@ header li {
 #logo{
     margin-left: 60px;
 }
-/*center search box*/
+/*center searchVideo box*/
 #search-form{
     margin-left: 100px;
 }
-/*taking care of input search box*/
+/*taking care of input searchVideo box*/
 input[type="text"]{
     width: 600px;
     height: 41.5px;
     padding-right: 50px;
 }
-/*taking care of input button search*/
+/*taking care of input button searchVideo*/
 input[type="submit"]{
     margin-left: -65px;
     height:40px;

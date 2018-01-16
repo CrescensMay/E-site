@@ -18,7 +18,10 @@
   <jsp:include page="html/apps.html"/>
   <jsp:include page="html/nav.html"/>
   <jsp:include page="html/results.html"/>
+
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+  <%--<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>--%>
   </body>
 </html>
