@@ -8,6 +8,12 @@ $(function () {
     //prevent page to load earlier
     $('#search-form').on('submit', function (e) {
         e.preventDefault();
+        searchVideo();
+    });
+
+    $('#searchSubmit').onclick(function (e) {
+        e.preventDefault();
+        searchVideo();
     });
 });
 
@@ -110,7 +116,7 @@ function getButtons(prevPageToken, nextPageToken) {
 function loadNextVideos(loadVideo) {
 
     var loadBtn;
-        loadBtn = '<div class="btn-container">' +
+        loadBtn = '<div class="lbtn-container">' +
         '<button id="load-btn" class="pagingLoad-btn" data-token="' + loadVideo + '" data-query="' + query + '"' +
         ' onclick="nextLoads();">Load more</button>' +
         '</div>';

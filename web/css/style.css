@@ -223,3 +223,18 @@ footer li a:hover{
 .clearfix{
     height: 10px;
 }
+/*design load button*/
+#lbtn-container{
+    text-align: center;
+}
+.pagingLoad-btn{
+    /*padding: 8px 13px;*/
+    border: none;
+    margin-left: 33%;
+    color: #ffffff;
+    width: 500px;
+    background: #ff7770;
+}
+.pagingLoad-btn:hover{
+   background: #ffa6a0;
+}
