@@ -10,6 +10,7 @@ $(function () {
         e.preventDefault();
     });
 });
+
 //create searchVideo function
 function searchVideo() {
     //clear result first no overlapping
@@ -32,8 +33,9 @@ function searchVideo() {
         },
         function (data) {
             //go through paging
+            var prevPageToken  = data.prevPageToken;
             var nextPageToken = data.nextPageToken;
-            var prevPageToken = data.prevPageToken;
+            var loadVideo = data.nextPageToken;
 
             console.log(data);
 
@@ -44,6 +46,14 @@ function searchVideo() {
                 //appending result
                 $results.append(outpout);
             });
+
+            //creating paging buttons
+            var buttons = getButtons(prevPageToken, nextPageToken);
+            var button = loadNextVideos(loadVideo);
+
+            //displaying buttons
+            $buttons.append(button);
+            $buttons.append(buttons);
         }
     );
 }
@@ -76,6 +86,37 @@ function getOutput(item) {
 
 }
 
+//Build buttons
+function getButtons(prevPageToken, nextPageToken) {
+    var btnOutput;
+    if(!prevPageToken){
+        btnOutput = '<div class="btn-container">' +
+            '<button id="next-btn" class="paging-btn" data-token="' + nextPageToken + '" data-query="' + query + '"' +
+            ' onclick="nextPage();">Next</button>' +
+            '</div>';
+    }else {
+        btnOutput = "<div class=\"btn-container\">" +
+            '<button id="prev-btn" class="paging-btn" data-token="' + prevPageToken + '" data-query="' + query + '"' +
+            ' onclick="prevPage();">Prev</button>' +
+            '<button id="next-btn" class="paging-btn" data-token="' + nextPageToken + '" data-query="' + query + '"' +
+            ' onclick="NextPage();">Next</button>' +
+            '</div>';
+    }
+
+    return btnOutput;
+}
+
+//same method as beneath one but single button here to load videos
+function loadNextVideos(loadVideo) {
+
+    var loadBtn;
+        loadBtn = '<div class="btn-container">' +
+        '<button id="load-btn" class="pagingLoad-btn" data-token="' + loadVideo + '" data-query="' + query + '"' +
+        ' onclick="nextLoads();">Load more</button>' +
+        '</div>';
+
+    return loadBtn;
+}
 //initialize API
 // function init() {
 //     gapi.client.setApiKey("YOUR_PUBLIC_KEY");

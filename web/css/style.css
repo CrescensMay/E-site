@@ -208,7 +208,7 @@ footer li a:hover{
 .list-left img{
     width: 100%;
     padding: 3px;
-    border: solid #ccc 1px;
+    border: solid #f7f6ff 1px;
 }
 /*work with list right from data output*/
 .list-right{
@@ -217,7 +217,7 @@ footer li a:hover{
 }
 /*resize the paragraph*/
 .list-right p{
-    width: 50%;
+    width: 55%;
 }
 /*clearfix underneath each video*/
 .clearfix{
