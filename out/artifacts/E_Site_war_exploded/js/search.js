@@ -11,7 +11,7 @@ $(function () {
         searchVideo();
     });
 
-    $('#searchSubmit').on('click',function (e) {
+    $('#searchSubmit').on('click', function (e) {
         e.preventDefault();
         searchVideo();
     });
@@ -174,6 +174,7 @@ function getOutput(item) {
     var thumb = item.snippet.thumbnails.high.url;
     var channelTitle = item.snippet.channelTitle;
     var videoDate = item.snippet.publishedAt;
+    var onclck = "window.open('http://www.youtube.com/embed/" + videoId + "'," + "'popup'," + "'width=100,height=200';return false;";
     var output = '';
     //Build ouptput string
     output = '<li class="list-item">' +
@@ -181,7 +182,7 @@ function getOutput(item) {
         '<img src="' + thumb + '">' +
         '</div>' +
         '<div class="list-right">' +
-        '<h3><a href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h3>' +
+        '<h3><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h3>' +
         '<small>By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
         '<p>' + description + '</p>' +
         '</div>' +
