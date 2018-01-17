@@ -11,7 +11,7 @@ $(function () {
         searchVideo();
     });
 
-    $('#searchSubmit').onclick(function (e) {
+    $('#searchSubmit').on('click',function (e) {
         e.preventDefault();
         searchVideo();
     });
@@ -181,7 +181,7 @@ function getOutput(item) {
         '<img src="' + thumb + '">' +
         '</div>' +
         '<div class="list-right">' +
-        '<h3>' + title + '</h3>' +
+        '<h3><a href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h3>' +
         '<small>By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
         '<p>' + description + '</p>' +
         '</div>' +
