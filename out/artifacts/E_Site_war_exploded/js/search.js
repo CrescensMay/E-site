@@ -64,6 +64,108 @@ function searchVideo() {
     );
 }
 
+//Next page function
+function nextPage() {
+    var $nextBtn = $('#next-btn');
+    var token = $nextBtn.data('token');
+    var qry = $nextBtn.data('query');
+    //clear result first no overlapping
+    $results.html('');
+    $buttons.html('');
+
+    //get from input
+    query = $search.val();
+
+    //run get request on API
+    // specific to a particular API or API method
+    $.get(
+        'https://www.googleapis.com/youtube/v3/search',
+        {
+            part: 'snippet, id',
+            q: query,
+            pageToken: token,
+            type: 'video',
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
+            // maxResults: '25'
+        },
+        function (data) {
+            //go through paging
+            var prevPageToken  = data.prevPageToken;
+            var nextPageToken = data.nextPageToken;
+            var loadVideo = data.nextPageToken;
+
+            console.log(data);
+
+            //looping through the items
+            $.each(data.items, function (i, item) {
+                //getting output
+                var outpout = getOutput(item);
+                //appending result
+                $results.append(outpout);
+            });
+
+            //creating paging buttons
+            var buttons = getButtons(prevPageToken, nextPageToken);
+            var button = loadNextVideos(loadVideo);
+
+            //displaying buttons
+            $buttons.append(button);
+            $buttons.append(buttons);
+        }
+    );
+}
+
+//Previous page function
+function prevPage() {
+    var $prevBtn = $('#prev-btn');
+    var token = $prevBtn.data('token');
+    var qry = $prevBtn.data('query');
+    //clear result first no overlapping
+    $results.html('');
+    $buttons.html('');
+
+    //get form input
+    query = $search.val();
+
+    //run get request on API
+    // specific to a particular API or API method
+    $.get(
+        'https://www.googleapis.com/youtube/v3/search',
+        {
+            part: 'snippet, id',
+            q: query,
+            pageToken: token,
+            type: 'video',
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
+            // maxResults: '25'
+        },
+        function (data) {
+            //go through paging
+            var prevPageToken  = data.prevPageToken;
+            var nextPageToken = data.nextPageToken;
+            var loadVideo = data.nextPageToken;
+
+            console.log(data);
+
+            //looping through the items
+            $.each(data.items, function (i, item) {
+                //getting output
+                var output = getOutput(item);
+                //appending result
+                $results.append(output);
+            });
+
+            //creating paging buttons
+            var buttons = getButtons(prevPageToken, nextPageToken);
+            var button = loadNextVideos(loadVideo);
+
+            //displaying buttons
+            $buttons.append(button);
+            $buttons.append(buttons);
+        }
+    );
+}
+
 //building output
 function getOutput(item) {
     var videoId = item.id.videoId;
@@ -72,9 +174,9 @@ function getOutput(item) {
     var thumb = item.snippet.thumbnails.high.url;
     var channelTitle = item.snippet.channelTitle;
     var videoDate = item.snippet.publishedAt;
-
+    var output = '';
     //Build ouptput string
-    var output = '<li class="list-item">' +
+    output = '<li class="list-item">' +
         '<div class="list-left">' +
         '<img src="' + thumb + '">' +
         '</div>' +
@@ -101,11 +203,11 @@ function getButtons(prevPageToken, nextPageToken) {
             ' onclick="nextPage();">Next</button>' +
             '</div>';
     }else {
-        btnOutput = "<div class=\"btn-container\">" +
+        btnOutput = '<div class="btn-container">' +
             '<button id="prev-btn" class="paging-btn" data-token="' + prevPageToken + '" data-query="' + query + '"' +
             ' onclick="prevPage();">Prev</button>' +
             '<button id="next-btn" class="paging-btn" data-token="' + nextPageToken + '" data-query="' + query + '"' +
-            ' onclick="NextPage();">Next</button>' +
+            ' onclick="nextPage();">Next</button>' +
             '</div>';
     }
 
@@ -123,6 +225,7 @@ function loadNextVideos(loadVideo) {
 
     return loadBtn;
 }
+
 //initialize API
 // function init() {
 //     gapi.client.setApiKey("YOUR_PUBLIC_KEY");
