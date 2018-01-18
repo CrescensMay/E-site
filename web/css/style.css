@@ -1,5 +1,5 @@
 body{
-/*background-color: silver;*/
+    background: #b6e6b7;
     /*margin: auto;*/
 }
 /*header size*/
@@ -238,6 +238,21 @@ footer li a:hover{
 }
 .pagingLoad-btn:hover{
    background: #ffa6a0;
+}
+/*button container positioning*/
+.btn-container{
+    margin-left: 43%;
+}
+/*next prev button design*/
+.paging-btn{
+    border: none;
+    width: 100px;
+    color: #ffffff;
+    background: #ff7770;
+    margin-left: 3px;
+}
+.paging-btn:hover{
+    background: #ffa6a0;
 }
 /*list right h3 color change*/
 .list-right h3 a{
