@@ -1,20 +1,20 @@
 var $results = $('#result-video');
 var $buttons = $('#btn');
 var $search = $('#searchField');
+var $form = $('#search-form');
+var $submit = $('#searchSubmit');
 var $heading = $('.video-heading');
+var $videoContainer = $('#video-container');
 var query;
 
-$(function () {
-    //prevent page to load earlier
-    $('#search-form').on('submit', function (e) {
-        e.preventDefault();
+$('form').submit(function (e) {
+    e.preventDefault();
+    if($search.val() === ''){
+        alert('Cannot remain empty');
+    }else {
         searchVideo();
-    });
+    }
 
-    $('#searchSubmit').on('click', function (e) {
-        e.preventDefault();
-        searchVideo();
-    });
 });
 
 //create searchVideo function
@@ -58,6 +58,7 @@ function searchVideo() {
             var button = loadNextVideos(loadVideo);
 
             //displaying buttons
+            $videoContainer.css('background-color', '#b6e6b7');
             $buttons.append(button);
             $buttons.append(buttons);
         }
@@ -174,12 +175,12 @@ function getOutput(item) {
     var thumb = item.snippet.thumbnails.high.url;
     var channelTitle = item.snippet.channelTitle;
     var videoDate = item.snippet.publishedAt;
-    var onclck = "window.open('http://www.youtube.com/embed/" + videoId + "'," + "'popup'," + "'width=100,height=200';return false;";
     var output = '';
     //Build ouptput string
     output = '<li class="list-item">' +
         '<div class="list-left">' +
-        '<img src="' + thumb + '">' +
+        '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
+        '<img src="' + thumb + '"></a>' +
         '</div>' +
         '<div class="list-right">' +
         '<h3><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h3>' +
@@ -191,8 +192,6 @@ function getOutput(item) {
         '';
 
     return output;
-
-
 }
 
 //Build buttons

@@ -25,21 +25,6 @@
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/search.js"></script>
-  <%--<script type="text/javascript">--%>
-      <%--$(document).ready(function() {--%>
-          <%--$(".various").fancybox({--%>
-              <%--maxWidth    : 800,--%>
-              <%--maxHeight   : 600,--%>
-              <%--fitToView   : false,--%>
-              <%--width       : '70%',--%>
-              <%--height      : '70%',--%>
-              <%--autoSize    : false,--%>
-              <%--closeClick  : false,--%>
-              <%--openEffect  : 'none',--%>
-              <%--closeEffect : 'none'--%>
-          <%--});--%>
-      <%--});--%>
-  <%--</script>--%>
   <%--<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>--%>
   </body>
 </html>

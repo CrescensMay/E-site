@@ -188,7 +188,7 @@ footer li a:hover{
     position: relative;
     z-index: 0;
     padding: 10px 10px 10px 10px;
-    background: #b6e6b7;
+    /*background: #b6e6b7;*/
     color: #ffffff;
 }
 /*toggle video container class to be used when menu icon is clicked */
@@ -206,9 +206,10 @@ footer li a:hover{
     width: 20%;
 }
 .list-left img{
+    box-sizing: border-box;
     width: 100%;
     padding: 3px;
-    border: solid #f7f6ff 1px;
+    border: solid 3px white;
 }
 /*work with list right from data output*/
 .list-right{
