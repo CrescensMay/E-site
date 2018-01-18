@@ -16,7 +16,7 @@
 
     <title>Home</title>
   </head>
-  <body>
+  <body onload="loadVideo()">
   <jsp:include page="html/header.html"/>
   <jsp:include page="html/apps.html"/>
   <jsp:include page="html/nav.html"/>

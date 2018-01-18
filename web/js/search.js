@@ -18,6 +18,27 @@ $('form').submit(function (e) {
 
 });
 
+//load videos on page load
+function loadVideo() {
+    $.get(
+        'https://www.googleapis.com/youtube/v3/search',
+        {
+            part: 'snippet, id',
+            type: 'video',
+            key: 'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
+            maxResults: '12'
+        },
+        function (data) {
+            $.each(data.items, function (i, item) {
+                var outPut = getMainOutput(item);
+                console.log(data);
+
+                $results.append(outPut);
+            });
+        }
+    )
+}
+
 //create searchVideo function
 function searchVideo() {
     //clear result first no overlapping
@@ -226,7 +247,7 @@ function nextLoads() {
 }
 
 
-//building output
+//building output for search
 function getOutput(item) {
     var videoId = item.id.videoId;
     var title = item.snippet.title;
@@ -246,6 +267,31 @@ function getOutput(item) {
         '<small>By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
         '<p>' + description + '</p>' +
         '</div>' +
+        '</li>' +
+        '<div class="clearfix"></div>' +
+        '';
+
+    return output;
+}
+
+//Build output for main page
+function getMainOutput(item) {
+    var videoId = item.id.videoId;
+    var title = item.snippet.title;
+    // var description = item.snippet.description;
+    var thumb = item.snippet.thumbnails.high.url;
+    var channelTitle = item.snippet.channelTitle;
+    var videoDate = item.snippet.publishedAt;
+
+    var output = '';
+    //Build ouptput string
+    output = '<li class="list-item-main">' +
+        '<div class="list-div-main">' +
+        '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
+        '<img src="' + thumb + '">' +
+        '<h5><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h5>' +
+        '<small>By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
+        '</a></div>' +
         '</li>' +
         '<div class="clearfix"></div>' +
         '';
