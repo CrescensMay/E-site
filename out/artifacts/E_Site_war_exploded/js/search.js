@@ -26,15 +26,23 @@ function loadVideo() {
             part: 'snippet, id',
             type: 'video',
             key: 'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
-            maxResults: '12'
+            maxResults: '20'
         },
         function (data) {
+            //go through paging
+            var prevPageToken  = data.prevPageToken;
+            var nextPageToken = data.nextPageToken;
+
             $.each(data.items, function (i, item) {
                 var outPut = getMainOutput(item);
                 console.log(data);
 
+                //append output to the html page
                 $results.append(outPut);
             });
+            var buttons = getButtons(prevPageToken, nextPageToken);
+            //append buttons next prev
+            $buttons.append(buttons);
         }
     )
 }
@@ -264,7 +272,7 @@ function getOutput(item) {
         '</div>' +
         '<div class="list-right">' +
         '<h3><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h3>' +
-        '<small>By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
+        '<small class="channel-date">By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
         '<p>' + description + '</p>' +
         '</div>' +
         '</li>' +
@@ -286,14 +294,14 @@ function getMainOutput(item) {
     var output = '';
     //Build ouptput string
     output = '<li class="list-item-main">' +
-        '<div class="list-div-main">' +
+        // '<div class="list-div-main">' +
         '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
         '<img src="' + thumb + '">' +
         '<h5><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h5>' +
-        '<small>By <span class="cTitle">' + channelTitle + ' </span> on ' + videoDate + '</small>' +
-        '</a></div>' +
+        '<small class="channel-date">By <span class="cTitle">' + channelTitle + ' </span><br>' + videoDate + '</small>' +
+        '</a>' +
         '</li>' +
-        '<div class="clearfix"></div>' +
+        // '<div class="clearfix"></div>' +
         '';
 
     return output;
