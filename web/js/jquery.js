@@ -37,16 +37,15 @@ $('.app-item').mouseenter(function () {
 //toggle menu when menu button clicked and handle rotation of menu icon
 $('#menu-icon').click(function () {
     $(this).toggleClass('rotateEffect');
-    $navFooter.toggle(150);
+    $navFooter.toggle();
 
     //toggle video container size when menu icon is clicked
     $section.toggleClass('toggleContainer');
-    $loadBtn.toggleClass('resizeBtn');
-
 });
 
 //toggle apps menu on click
 $('#apps-icon').click(function () {
     $(this).toggleClass('rotateEffect');
-    $('#apps-links').toggle(150);
+    $('#apps-links').toggle();
 });
+

@@ -31,7 +31,10 @@ header li {
 }
 /*apps links design*/
 #apps-links{
-    position: absolute;
+    position: fixed;
+    z-index: 1;
+    margin-top: 5.6em;
+    /*position: absolute;*/
     background: #f7f6ff;
     letter-spacing: .5px;
     line-height: 35px;
@@ -103,8 +106,8 @@ input[type="submit"]{
     line-height: 35px;
     width: 300px;
     z-index: 1;
-    margin-top: 5em;
-    height: 565px;
+    margin-top: 5.6em;
+    height: 560px;
 }
 /*change nav link color to black*/
 #nav-footer a{
@@ -123,7 +126,7 @@ input[type="submit"]{
 /*rotate menu icon when clicked function-class at the same time*/
 .rotateEffect{
     transform: rotate(45deg);
-    transition: .3s;
+    /*transition: .3s;*/
 }
 #nav-footer{
     overflow: hidden;
@@ -154,12 +157,6 @@ input[type="submit"]{
     background-image: url("/images/ebook1.png");
 }
 
-/*set apps div on top of video container*/
-#apps-links{
-    position: fixed;
-    z-index: 1;
-    margin-top: 5em;
-}
 /*add icons before each menu item*/
 #apps-links ul a{
     display: block;
