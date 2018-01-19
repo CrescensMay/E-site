@@ -30,8 +30,7 @@ function loadVideo() {
         },
         function (data) {
             //go through paging
-            var prevPageToken  = data.prevPageToken;
-            var nextPageToken = data.nextPageToken;
+            var loadVideo = data.nextPageToken;
 
             $.each(data.items, function (i, item) {
                 var outPut = getMainOutput(item);
@@ -40,11 +39,11 @@ function loadVideo() {
                 //append output to the html page
                 $results.append(outPut);
             });
-            var buttons = getButtons(prevPageToken, nextPageToken);
-            //append buttons next prev
-            $buttons.append(buttons);
+            var button = loadNextVideos(loadVideo);
+            //displaying buttons
+            $buttons.append(button);
         }
-    )
+    );
 }
 
 //create searchVideo function
@@ -71,7 +70,6 @@ function searchVideo() {
             //go through paging
             var prevPageToken  = data.prevPageToken;
             var nextPageToken = data.nextPageToken;
-            var loadVideo = data.nextPageToken;
 
             console.log(data);
 
@@ -81,18 +79,11 @@ function searchVideo() {
                 var outpout = getOutput(item);
                 //appending result
                 $results.append(outpout);
-                // $results.find('li:lt(1)').hide();
-                // $('#result-video').find('li:lt(1)').show();
             });
 
             //creating paging buttons
             var buttons = getButtons(prevPageToken, nextPageToken);
-            var button = loadNextVideos(loadVideo);
-
-            //setting background color
-            // $videoContainer.css('background-color', '#b6e6b7');
             //displaying buttons
-            // $buttons.append(button);
             $buttons.append(buttons);
         }
     );
@@ -204,15 +195,12 @@ function prevPage() {
 
 //load more videos
 function nextLoads() {
-    var $nextBtn = $('#next-btn');
-    var token = $nextBtn.data('token');
-    var qry = $nextBtn.data('query');
+    var $loadBtn = $('#load-btn');
+    var token = $loadBtn.data('token');
+    // var qry = $nextBtn.data('query');
     //clear result first no overlapping
     $results.html('');
     $buttons.html('');
-
-    //get from input
-    query = $search.val();
 
     //run get request on API
     // specific to a particular API or API method
@@ -220,16 +208,13 @@ function nextLoads() {
         'https://www.googleapis.com/youtube/v3/search',
         {
             part: 'snippet, id',
-            q: query,
             pageToken: token,
             type: 'video',
-            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
-            // maxResults: '25'
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
+            maxResults: '20'
         },
         function (data) {
             //go through paging
-            var prevPageToken  = data.prevPageToken;
-            var nextPageToken = data.nextPageToken;
             var loadVideo = data.nextPageToken;
 
             console.log(data);
@@ -237,19 +222,18 @@ function nextLoads() {
             //looping through the items
             $.each(data.items, function (i, item) {
                 //getting output
-                var outpout = getOutput(item);
+                var output = getMainOutput(item);
                 //appending result
-                $results.append(outpout);
-                // $('.list-item').hide();
+                $results.append(output);
             });
 
             //creating paging buttons
-            var buttons = getButtons(prevPageToken, nextPageToken);
+            // var buttons = getButtons(prevPageToken, nextPageToken);
             var button = loadNextVideos(loadVideo);
 
             //displaying buttons
             // $buttons.append(button);
-            $buttons.append(buttons);
+            $buttons.append(button);
         }
     );
 }
@@ -328,11 +312,11 @@ function getButtons(prevPageToken, nextPageToken) {
 }
 
 //same method as beneath one but single button here to load videos
-function loadNextVideos(loadVideo) {
+function loadNextVideos(nextPageToken) {
 
     var loadBtn;
         loadBtn = '<div class="lbtn-container">' +
-        '<button id="load-btn" class="pagingLoad-btn" data-token="' + loadVideo + '" data-query="' + query + '"' +
+        '<button id="load-btn" class="pagingLoad-btn" data-token="' + nextPageToken  + '"' +
         ' onclick="nextLoads();">Load more</button>' +
         '</div>';
 
