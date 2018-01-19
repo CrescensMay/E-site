@@ -20,6 +20,10 @@ $('form').submit(function (e) {
 
 //load videos on page load
 function loadVideo() {
+    //clear result first no overlapping
+    $results.html('');
+    $buttons.html('');
+    $heading.html('');
     $.get(
         'https://www.googleapis.com/youtube/v3/search',
         {
@@ -31,14 +35,18 @@ function loadVideo() {
         function (data) {
             //go through paging
             var loadVideo = data.nextPageToken;
+            var pageInfo = data.pageInfo.totalResults;
 
             $.each(data.items, function (i, item) {
                 var outPut = getMainOutput(item);
                 console.log(data);
 
-                //append output to the html page
+                //append output to the html page and total results
                 $results.append(outPut);
             });
+            //append total results
+            $heading.append('About ' + pageInfo + ' results');
+
             var button = loadNextVideos(loadVideo);
             //displaying buttons
             $buttons.append(button);
@@ -51,6 +59,8 @@ function searchVideo() {
     //clear result first no overlapping
     $results.html('');
     $buttons.html('');
+    $heading.html('');
+
 
     //get form input
     query = $search.val();
@@ -70,6 +80,7 @@ function searchVideo() {
             //go through paging
             var prevPageToken  = data.prevPageToken;
             var nextPageToken = data.nextPageToken;
+            var pageInfo = data.pageInfo.totalResults;
 
             console.log(data);
 
@@ -81,6 +92,7 @@ function searchVideo() {
                 $results.append(outpout);
             });
 
+            $heading.append('About ' + pageInfo + ' results');
             //creating paging buttons
             var buttons = getButtons(prevPageToken, nextPageToken);
             //displaying buttons
@@ -107,11 +119,10 @@ function nextPage() {
         'https://www.googleapis.com/youtube/v3/search',
         {
             part: 'snippet, id',
-            q: query,
+            q: qry,
             pageToken: token,
             type: 'video',
-            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
-            maxResults: '25'
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
         },
         function (data) {
             //go through paging
@@ -158,17 +169,15 @@ function prevPage() {
         'https://www.googleapis.com/youtube/v3/search',
         {
             part: 'snippet, id',
-            q: query,
+            q: qry,
             pageToken: token,
             type: 'video',
             key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
-            // maxResults: '25'
         },
         function (data) {
             //go through paging
             var prevPageToken  = data.prevPageToken;
             var nextPageToken = data.nextPageToken;
-            var loadVideo = data.nextPageToken;
 
             console.log(data);
 
@@ -178,15 +187,12 @@ function prevPage() {
                 var output = getOutput(item);
                 //appending result
                 $results.append(output);
-                // $('.list-item').hide();
             });
 
             //creating paging buttons
             var buttons = getButtons(prevPageToken, nextPageToken);
-            var button = loadNextVideos(loadVideo);
 
             //displaying buttons
-            // $buttons.append(button);
             $buttons.append(buttons);
         }
     );
@@ -196,7 +202,6 @@ function prevPage() {
 function nextLoads() {
     var $loadBtn = $('#load-btn');
     var token = $loadBtn.data('token');
-    // var qry = $nextBtn.data('query');
     //clear result first no overlapping
     $results.html('');
     $buttons.html('');
@@ -231,7 +236,6 @@ function nextLoads() {
             var button = loadNextVideos(loadVideo);
 
             //displaying buttons
-            // $buttons.append(button);
             $buttons.append(button);
         }
     );
@@ -284,7 +288,6 @@ function getMainOutput(item) {
         '<small class="channel-date">By <span class="cTitle">' + channelTitle + ' </span><br>' + videoDate + '</small>' +
         '</a>' +
         '</li>' +
-        // '<div class="clearfix"></div>' +
         '';
 
     return output;

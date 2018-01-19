@@ -218,6 +218,11 @@ footer li a:hover{
     border-bottom: 1px #ccc dotted;
     overflow: auto;
 }
+/*video heading design*/
+.video-heading{
+    position: relative;
+    left: 5px;
+}
 /*work with list left from data output*/
 .list-left{
     float: left;
@@ -256,14 +261,10 @@ footer li a:hover{
 .pagingLoad-btn:hover{
    background: #ffa6a0;
 }
-/*toggle class to resize the button size when menu icon clicked*/
-.resizeBtn{
-    width: 100px;
-}
+
 /*button container positioning*/
 .btn-container{
     clear: both;
-    /*margin-left: 43%;*/
 }
 /*next prev button design*/
 .paging-btn{
