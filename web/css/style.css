@@ -4,9 +4,10 @@ body{
 }
 /*header size*/
 header{
-    /*position: fixed;*/
+    position: fixed;
     /*bottom: 13px;*/
-    height: 80px;
+    z-index: 1;
+    height: 90px;
     width: 100%;
     background: #f7f6ff;
     text-align: center;
@@ -96,12 +97,14 @@ input[type="submit"]{
 
 /*change nav background color*/
 #nav-footer{
-    position: absolute;
+    position: fixed;
     background: #f7f6ff;
     letter-spacing: .5px;
     line-height: 35px;
     width: 300px;
     z-index: 1;
+    margin-top: 5em;
+    height: 565px;
 }
 /*change nav link color to black*/
 #nav-footer a{
@@ -122,7 +125,10 @@ input[type="submit"]{
     transform: rotate(45deg);
     transition: .3s;
 }
-
+#nav-footer{
+    overflow: hidden;
+    overflow-y: scroll;
+}
 /*add icons before each menu item*/
 .menu-links a{
     display: block;
@@ -150,7 +156,9 @@ input[type="submit"]{
 
 /*set apps div on top of video container*/
 #apps-links{
+    position: fixed;
     z-index: 1;
+    margin-top: 5em;
 }
 /*add icons before each menu item*/
 #apps-links ul a{
@@ -186,16 +194,26 @@ footer li a:hover{
 /*taking care of section video*/
 #video-container{
     position: relative;
+    top: 5em;
     z-index: 0;
     padding: 10px 10px 10px 10px;
-    /*background: #b6e6b7;*/
+    background: #b6e6b7;
     color: #ffffff;
+    /*margin: auto;*/
+    /*width: 75%;*/
+}
+/*put buttons in the center of the div*/
+#btn{
+    text-align: center;
 }
 /*toggle video container class to be used when menu icon is clicked */
 .toggleContainer{
     margin-left: 300px;
 }
 /*design result list*/
+#result-video{
+    /*margin-left: 60px;*/
+}
 #result-video li{
     border-bottom: 1px #ccc dotted;
     overflow: auto;
@@ -231,7 +249,6 @@ footer li a:hover{
 .pagingLoad-btn{
     /*padding: 8px 13px;*/
     border: none;
-    margin-left: 33%;
     color: #ffffff;
     width: 500px;
     background: #ff7770;
@@ -239,10 +256,14 @@ footer li a:hover{
 .pagingLoad-btn:hover{
    background: #ffa6a0;
 }
+/*toggle class to resize the button size when menu icon clicked*/
+.resizeBtn{
+    width: 100px;
+}
 /*button container positioning*/
 .btn-container{
     clear: both;
-    margin-left: 43%;
+    /*margin-left: 43%;*/
 }
 /*next prev button design*/
 .paging-btn{
@@ -267,7 +288,7 @@ footer li a:hover{
 .list-item-main{
     margin-top: 15px;
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 1px;
     float: left;
     overflow: auto;
 }
@@ -280,7 +301,7 @@ footer li a:hover{
 .channel-date{
     color: #f4fffc;
     position: relative;
-    /*top: 2px;*/
+    margin-left: 2px;
 }
 .list-item-main a{
     color: #ffffff;
@@ -288,7 +309,7 @@ footer li a:hover{
 .list-item-main img{
     width: 210px;
     height: 120px;
-    border: solid 3px white;
+    /*border: solid 3px white;*/
 }
 .list-div-main{
     /*line-height: 5px;*/

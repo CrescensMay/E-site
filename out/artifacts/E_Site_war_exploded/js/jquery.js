@@ -1,6 +1,7 @@
 var $navFooter = $('#nav-footer');
 var $section = $('#video-container');
-
+var $loadBtn = $('#load-btn');
+var $btnSize = $('.pagingLoad-btn');
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -40,6 +41,8 @@ $('#menu-icon').click(function () {
 
     //toggle video container size when menu icon is clicked
     $section.toggleClass('toggleContainer');
+    $loadBtn.toggleClass('resizeBtn');
+
 });
 
 //toggle apps menu on click

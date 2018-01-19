@@ -26,7 +26,7 @@ function loadVideo() {
             part: 'snippet, id',
             type: 'video',
             key: 'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
-            maxResults: '20'
+            maxResults: '24'
         },
         function (data) {
             //go through paging
@@ -110,8 +110,8 @@ function nextPage() {
             q: query,
             pageToken: token,
             type: 'video',
-            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
-            // maxResults: '25'
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
+            maxResults: '25'
         },
         function (data) {
             //go through paging
@@ -127,7 +127,6 @@ function nextPage() {
                 var outpout = getOutput(item);
                 //appending result
                 $results.append(outpout);
-                // $('.list-item').hide();
             });
 
             //creating paging buttons
@@ -211,7 +210,7 @@ function nextLoads() {
             pageToken: token,
             type: 'video',
             key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
-            maxResults: '20'
+            maxResults: '24'
         },
         function (data) {
             //go through paging
@@ -281,7 +280,7 @@ function getMainOutput(item) {
         // '<div class="list-div-main">' +
         '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
         '<img src="' + thumb + '">' +
-        '<h5><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h5>' +
+        '<h5 style="margin-left: 2px;"><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h5>' +
         '<small class="channel-date">By <span class="cTitle">' + channelTitle + ' </span><br>' + videoDate + '</small>' +
         '</a>' +
         '</li>' +
