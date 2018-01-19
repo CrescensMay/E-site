@@ -216,9 +216,9 @@ footer li a:hover{
     overflow: auto;
 }
 /*video heading design*/
-.video-heading{
-    position: relative;
-    left: 5px;
+.video-heading p{
+    /*position: relative;*/
+    margin-left: 2em;
 }
 /*work with list left from data output*/
 .list-left{

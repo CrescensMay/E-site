@@ -3,7 +3,7 @@ var $buttons = $('#btn');
 var $search = $('#searchField');
 var $form = $('#search-form');
 var $submit = $('#searchSubmit');
-var $heading = $('.video-heading');
+var $heading = $('.video-heading p');
 var $videoContainer = $('#video-container');
 var query;
 
