@@ -255,7 +255,7 @@ function getOutput(item) {
     output = '<li class="list-item">' +
         '<div class="list-left">' +
         '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
-        '<img src="' + thumb + '"></a>' +
+        '<img src="' + thumb + '" title="' + description + '"></a>' +
         '</div>' +
         '<div class="list-right">' +
         '<h3><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h3>' +
@@ -273,7 +273,7 @@ function getOutput(item) {
 function getMainOutput(item) {
     var videoId = item.id.videoId;
     var title = item.snippet.title;
-    // var description = item.snippet.description;
+    var description = item.snippet.description;
     var thumb = item.snippet.thumbnails.high.url;
     var channelTitle = item.snippet.channelTitle;
     var videoDate = item.snippet.publishedAt;
@@ -283,13 +283,12 @@ function getMainOutput(item) {
     output = '<li class="list-item-main">' +
         // '<div class="list-div-main">' +
         '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
-        '<img src="' + thumb + '">' +
+        '<img src="' + thumb + '" title="' + description + '">' +
         '<h5 style="margin-left: 2px;"><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h5>' +
         '<small class="channel-date">By <span class="cTitle">' + channelTitle + ' </span><br>' + videoDate + '</small>' +
         '</a>' +
         '</li>' +
         '';
-
     return output;
 }
 
