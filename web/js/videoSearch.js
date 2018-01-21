@@ -7,7 +7,7 @@ var $heading = $('.video-heading p');
 var $videoContainer = $('#video-container');
 var query;
 
-$('form').submit(function (e) {
+$form.submit(function (e) {
     e.preventDefault();
     //if input null
     if($search.val() === ''){
@@ -100,7 +100,6 @@ function searchVideo() {
         }
     );
 }
-
 //Next page function
 function nextPage() {
     var $nextBtn = $('#next-btn');

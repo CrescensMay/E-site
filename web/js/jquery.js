@@ -2,6 +2,7 @@ var $navFooter = $('#nav-footer');
 var $section = $('#video-container');
 var $loadBtn = $('#load-btn');
 var $btnSize = $('.pagingLoad-btn');
+var $upload = $('#ebook-div');
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -10,6 +11,9 @@ $('nav').hide();
 
 //hiding the apps menu
 $('#apps-links').hide();
+
+//hiding upload box
+$upload.hide();
 
 //showing children on mouseover and hiding on mouseleave
 $("#upload-links").mouseenter(function () {
@@ -47,5 +51,13 @@ $('#menu-icon').click(function () {
 $('#apps-icon').click(function () {
     $(this).toggleClass('rotateEffect');
     $('#apps-links').toggle();
+});
+
+//trying to pop upload window
+$('#upload-icon').mouseenter(function () {
+    $(this).css('cursor','pointer');
+    $(this).click(function () {
+        $upload.show();
+    });
 });
 

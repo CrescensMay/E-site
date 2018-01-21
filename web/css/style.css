@@ -68,7 +68,7 @@ input[type="text"]{
     padding-right: 50px;
 }
 /*taking care of input button searchVideo*/
-input[type="submit"]{
+#searchSubmit{
     margin-left: -65px;
     height:40px;
     width: 60px;
@@ -311,4 +311,16 @@ footer li a:hover{
 }
 .list-div-main{
     /*line-height: 5px;*/
+}
+/*design the update box*/
+#ebook-div{
+    position: fixed;
+    z-index: 1;
+    width: 350px;
+    height: 200px;
+    margin-top: 5em;
+    /*margin-left: 35%;*/
+    padding: 30px;
+    left: 45%;
+    background: #f4fffc;
 }

@@ -3112,9 +3112,8 @@
 // Adds additional media type support
 //
 // ==========================================================================
-;(function ($) {
-
-	'use strict';
+(function ($) {
+    'use strict';
 
 	// Formats matching url to final form
 
@@ -3324,8 +3323,8 @@
 // Adds touch guestures, handles click and tap events
 //
 // ==========================================================================
-;(function (window, document, $) {
-	'use strict';
+(function (window, document, $) {
+    'use strict';
 
 	var requestAFrame = (function () {
 		return window.requestAnimationFrame ||
@@ -3601,7 +3600,7 @@
 		self.distanceX = distance( self.newPoints[0], self.startPoints[0], 'x' );
 		self.distanceY = distance( self.newPoints[0], self.startPoints[0], 'y' );
 
-		self.distance = distance( self.newPoints[0], self.startPoints[0] )
+		self.distance = distance( self.newPoints[0], self.startPoints[0] );
 
 		// Skip false ontouchmove events (Chrome)
 		if ( self.distance > 0 ) {
@@ -3970,7 +3969,7 @@
 			self.endSwiping( swiping, scrolling );
 		}
 
-		return;
+
 	};
 
 	Guestures.prototype.endSwiping = function( swiping, scrolling ) {
@@ -4247,8 +4246,8 @@
 // $.fancybox.getInstance().SlideShow.start()
 //
 // ==========================================================================
-;(function (document, $) {
-	'use strict';
+(function (document, $) {
+    'use strict';
 
 	$.extend(true, $.fancybox.defaults, {
 		btnTpl : {
@@ -4430,8 +4429,8 @@
 // Adds fullscreen functionality
 //
 // ==========================================================================
-;(function (document, $) {
-	'use strict';
+(function (document, $) {
+    'use strict';
 
 	// Collection of methods supported by user browser
 	var fn = (function () {
@@ -4641,8 +4640,8 @@
 // Displays thumbnails in a grid
 //
 // ==========================================================================
-;(function (document, $) {
-	'use strict';
+(function (document, $) {
+    'use strict';
 
 	// Make sure there are default values
 	$.fancybox.defaults = $.extend(true, {
@@ -4894,8 +4893,8 @@
 // Displays simple form for sharing current url
 //
 // ==========================================================================
-;(function (document, $) {
-	'use strict';
+(function (document, $) {
+    'use strict';
 
 	$.extend(true, $.fancybox.defaults, {
 		btnTpl : {
@@ -4986,8 +4985,8 @@
 // Enables linking to each modal
 //
 // ==========================================================================
-;(function (document, window, $) {
-	'use strict';
+(function (document, window, $) {
+    'use strict';
 
 	// Simple $.escapeSelector polyfill (for jQuery prior v3)
 	if ( !$.escapeSelector ) {
@@ -5199,8 +5198,8 @@
 
 }( document, window, window.jQuery || jQuery ));
 
-;(function (document, $) {
-	'use strict';
+(function (document, $) {
+    'use strict';
 
 	var prevTime = new Date().getTime();
 
