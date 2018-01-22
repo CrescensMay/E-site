@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mysite@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="mysite">
+      <ObjectId>16579</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>13255</ObjectId>
+    </database>
+    <database id="4" parent="1" name="myemployees">
+      <ObjectId>16402</ObjectId>
+    </database>
+    <database id="5" parent="1" name="Point_Locataire">
+      <ObjectId>16417</ObjectId>
+    </database>
+    <schema id="6" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-01-22.14:02:14.484</IntrospectionTimestamp>
+      <IntrospectionStateNumber>916</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="information_schema">
+      <ObjectId>12965</ObjectId>
+    </schema>
+    <sequence id="12" parent="6" name="book_table_id_seq">
+      <ObjectId>16580</ObjectId>
+      <StateNumber>916</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="13" parent="6" name="book_table">
+      <ObjectId>16582</ObjectId>
+      <StateNumber>916</StateNumber>
+    </table>
+    <column id="14" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>916</StateNumber>
+      <SequenceName>book_table_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;book_table_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="15" parent="13" name="title">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <StateNumber>916</StateNumber>
+    </column>
+    <index id="16" parent="13" name="book_table_pkey">
+      <ObjectId>16586</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="17" parent="13" name="book_table_pkey">
+      <ObjectId>16587</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>book_table_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

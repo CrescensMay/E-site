@@ -22,7 +22,6 @@
   <jsp:include page="html/uploadEbook.html"/>
   <jsp:include page="html/nav.html"/>
   <jsp:include page="html/results.html"/>
-  <%--<jsp:include page="html/uploadEbook.html"/>--%>
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/videoSearch.js"></script>

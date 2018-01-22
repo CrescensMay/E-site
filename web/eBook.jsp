@@ -22,7 +22,6 @@
     <jsp:include page="html/nav.html"/>
     <jsp:include page="html/results.html"/>
     <h1>${requestScope['message']}</h1>
-
     <script type="text/javascript" src="js/jquery.js"></script>
     <%--<script type="text/javascript" src="js/bookSearch.js"></script>--%>
 </body>

@@ -3,6 +3,7 @@ var $section = $('#video-container');
 var $loadBtn = $('#load-btn');
 var $btnSize = $('.pagingLoad-btn');
 var $upload = $('#ebook-div');
+var $uploadIcon = $('#upload-icon');
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -43,8 +44,10 @@ $('#menu-icon').click(function () {
     $(this).toggleClass('rotateEffect');
     $navFooter.toggle();
 
-    //toggle video container size when menu icon is clicked
+    //reduce video container size when menu icon is clicked
     $section.toggleClass('toggleContainer');
+    //marge left upload box when menu opened
+    $upload.toggleClass('toggleUploadBox');
 });
 
 //toggle apps menu on click
@@ -54,10 +57,11 @@ $('#apps-icon').click(function () {
 });
 
 //trying to pop upload window
-$('#upload-icon').mouseenter(function () {
+$uploadIcon.mouseenter(function () {
     $(this).css('cursor','pointer');
-    $(this).click(function () {
-        $upload.show();
-    });
+});
+$uploadIcon.click(function () {
+    $(this).toggleClass('rotateEffect');
+    $upload.slideToggle();
 });
 

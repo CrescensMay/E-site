@@ -45,8 +45,9 @@ function loadVideo() {
                 $results.append(outPut);
             });
             //append total results
-            $heading.append('About ' + pageInfo + ' results');
-
+            $heading.append('' +
+                'About ' + pageInfo + ' results');
+            //append load button
             var button = loadNextVideos(loadVideo);
             //displaying buttons
             $buttons.append(button);

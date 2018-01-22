@@ -318,9 +318,13 @@ footer li a:hover{
     z-index: 1;
     width: 350px;
     height: 200px;
-    margin-top: 5em;
+    margin-top: 10.4em;
     /*margin-left: 35%;*/
     padding: 30px;
-    left: 45%;
+    left: 35%;
     background: #f4fffc;
+}
+/*toggle class to marge left the upload box when menu box opened*/
+.toggleUploadBox{
+    margin-left: 6.5%;
 }
