@@ -20,9 +20,9 @@
     <jsp:include page="html/apps.html"/>
     <jsp:include page="html/uploadEbook.html"/>
     <jsp:include page="html/nav.html"/>
-    <jsp:include page="html/results.html"/>
-    <h1>${requestScope['message']}</h1>
+    <jsp:include page="results.jsp"/>
+    <br><br>
+
     <script type="text/javascript" src="js/jquery.js"></script>
-    <%--<script type="text/javascript" src="js/bookSearch.js"></script>--%>
 </body>
 </html>
