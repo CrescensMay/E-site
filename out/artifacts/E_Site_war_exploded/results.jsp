@@ -1,4 +1,4 @@
-<%@ page import="dao.DB_Connection" %>
+<%@ page import="dao.BookDao" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.io.File" %>
 <%@ page import="java.util.Base64" %>
@@ -8,7 +8,7 @@
     <ul id="result-video">
         <%
             try {
-                DB_Connection db_connection = new DB_Connection();
+                BookDao db_connection = new BookDao();
                 Connection connection = db_connection.getConnection();
 
                 byte[] fileData = null;

@@ -1,3 +1,6 @@
+<div id="tab">
+    
+</div>
 <div id="ebook-div">
     <form id="upload-form" action="FileUploadServlet" method="post" enctype="multipart/form-data">
         <label for="title">Title</label><br>
@@ -8,78 +11,80 @@
         <section>
             <label for="year"><small>Year</small></label>
             <select id="year" name="year">
-                <option value="">2017</option>
-                <option value="">2016</option>
-                <option value="">2015</option>
-                <option value="">2014</option>
-                <option value="">2013</option>
-                <option value="">2012</option>
-                <option value="">2011</option>
-                <option value="">2010</option>
-                <option value="">2009</option>
-                <option value="">2008</option>
-                <option value="">2007</option>
-                <option value="">2006</option>
-                <option value="">2005</option>
-                <option value="">2004</option>
-                <option value="">2003</option>
-                <option value="">2002</option>
-                <option value="">2001</option>
-                <option value="">2000</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
             </select>
             <label for="month"><small>Month</small></label>
             <select id="month" name="month">
-                <option value="">January</option>
-                <option value="">December</option>
-                <option value="">November</option>
-                <option value="">October</option>
-                <option value="">September</option>
-                <option value="">August</option>
-                <option value="">July</option>
-                <option value="">June</option>
-                <option value="">May</option>
-                <option value="">April</option>
-                <option value="">March</option>
-                <option value="">February</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
             </select>
             <label for="day"><small>Day</small></label>
             <select id="day" name="day">
-                <option value="">31</option>
-                <option value="">30</option>
-                <option value="">29</option>
-                <option value="">28</option>
-                <option value="">27</option>
-                <option value="">26</option>
-                <option value="">25</option>
-                <option value="">24</option>
-                <option value="">23</option>
-                <option value="">22</option>
-                <option value="">21</option>
-                <option value="">20</option>
-                <option value="">19</option>
-                <option value="">18</option>
-                <option value="">17</option>
-                <option value="">16</option>
-                <option value="">15</option>
-                <option value="">14</option>
-                <option value="">13</option>
-                <option value="">12</option>
-                <option value="">11</option>
-                <option value="">10</option>
-                <option value="">9</option>
-                <option value="">8</option>
-                <option value="">7</option>
-                <option value="">6</option>
-                <option value="">5</option>
-                <option value="">4</option>
-                <option value="">3</option>
-                <option value="">2</option>
-                <option value="">1</option>
+                <option>31</option>
+                <option>30</option>
+                <option>29</option>
+                <option>28</option>
+                <option>27</option>
+                <option>26</option>
+                <option>25</option>
+                <option>24</option>
+                <option>23</option>
+                <option>22</option>
+                <option>21</option>
+                <option>20</option>
+                <option>19</option>
+                <option>18</option>
+                <option>17</option>
+                <option>16</option>
+                <option>15</option>
+                <option>14</option>
+                <option>13</option>
+                <option>12</option>
+                <option>11</option>
+                <option>10</option>
+                <option>9</option>
+                <option>8</option>
+                <option>7</option>
+                <option>6</option>
+                <option>5</option>
+                <option>4</option>
+                <option>3</option>
+                <option>2</option>
+                <option>1</option>
             </select>
         </section>
         <label for="publisher">Publisher</label><br>
         <input type="text" id="publisher" class="input" name="publisher"><br>
-        <label for="file">Select file</label><br>
+        <label for="cover">Cover</label><br>
+        <input type="file" id="cover" name="cover_file"><br>
+        <label for="file">File</label><br>
         <input type="file" id="file" name="image_file"><br>
         <input type="submit" id="upload-btn" value="Upload">
     </form>

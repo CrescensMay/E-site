@@ -1,16 +1,9 @@
 package servlet;
 
-import dao.DB_Connection;
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import bean.Book;
+import dao.BookDao;
 
 import java.io.*;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.List;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -47,67 +40,54 @@ public class FileUploadServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter printWriter = response.getWriter();
 
-        InputStream inputStream = null;
+        InputStream inputStreamCover = null;
+        InputStream inputStreamImg = null;
+        int sizeCover;
+        int sizeImg;
         String title = request.getParameter("image_title");
-        Part part = request.getPart("image_file");
-        if (part != null){
-            System.out.println(part.getName());
-            System.out.println(part.getSize());
-            System.out.println(part.getContentType());
+        String author = request.getParameter("author");
+        String year = request.getParameter("year");
+        String month = request.getParameter("month");
+        String day = request.getParameter("day");
+        String date = year + "/" + month + "/" + day;
+        String publisher = request.getParameter("publisher");
+        Part cover = request.getPart("cover_file");
+        Part file = request.getPart("image_file");
+        if (file != null && cover != null){
+            System.out.println(file.getName());
+            System.out.println(file.getSize());
+            System.out.println(file.getContentType());
 
-            inputStream = part.getInputStream();
+            System.out.println(cover.getName());
+            System.out.println(cover.getSize());
+            System.out.println(cover.getContentType());
+
+            inputStreamImg = file.getInputStream();
+            inputStreamCover = cover.getInputStream();
+        }
+        Book book = new Book();
+        book.setTitle(title);
+        book.setAuthor(author);
+        book.setDate(date);
+        book.setPublisher(publisher);
+        if (inputStreamCover != null && inputStreamImg != null){
+            sizeCover = (int) cover.getSize();
+            sizeImg = (int) file.getSize();
+            book.setCover(inputStreamCover);
+            book.setFile(inputStreamImg);
+            book.setCoverSize(sizeCover);
+            book.setImgSize(sizeImg);
+        }
+        int status = BookDao.saveBook(book);
+        if (status > 0){
+            System.out.println("file uploaded");
+            request.getRequestDispatcher("eBook.jsp").include(request, response);
+
+        } else {
+            System.out.println("Couldn't upload the file");
+            request.getRequestDispatcher("eBook.jsp").include(request, response);
         }
 
-        try {
-            DB_Connection db_connection = new DB_Connection();
-            Connection connection = db_connection.getConnection();
-            String sql = "INSERT INTO image_table (title, file) VALUES (?, ?)";
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1, title);
-            if (inputStream != null){
-                preparedStatement.setBinaryStream(2, inputStream, (int)part.getSize());
-            }
-            int row = preparedStatement.executeUpdate();
-            if (row > 0) {
-                System.out.println("file uploaded");
-                preparedStatement.close();
-                connection.close();
-                request.getRequestDispatcher("eBook.jsp").include(request, response);
-
-            } else {
-                System.out.println("Couldn't upload the file");
-                preparedStatement.close();
-                connection.close();
-                request.getRequestDispatcher("eBook.jsp").include(request, response);
-
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-//        //check if it is a file
-//        if (ServletFileUpload.isMultipartContent(request)){
-//
-//            try {
-//                List<FileItem> multiparts = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);
-//                for(FileItem item: multiparts){
-//                    if(!item.isFormField()){
-//                        //get file name
-//                        String name = new File(item.getName()).getName();
-//                        //upload file into dir
-//                        item.write(new File(UPLOAD_DIR + File.separator + name));
-////                        request.setAttribute("file", UPLOAD_DIR + File.separator + name);
-//                    }
-//                }
-//                //File upload successfully
-//                request.setAttribute("message","Success");
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//                request.setAttribute("message", "Failed due to " + e);
-//            }
-//
-//        }
-////        request.getRequestDispatcher("eBook.jsp").forward(request,response);
     }
 
 }
