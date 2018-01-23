@@ -21,7 +21,7 @@
                     String encode = Base64.getEncoder().encodeToString(fileData);
                     request.setAttribute("imageBase", encode);
                     %>
-        <li class="list-item-main"><img height="300px" width="300px" src="data:image/png;base64,${imageBase}" alt="">
+        <li class="list-item-main"><img src="data:image/png;base64,${imageBase}" alt="image_type_check">
             <%
                 }
 

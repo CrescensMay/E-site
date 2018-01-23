@@ -62,7 +62,7 @@ header li {
     margin-left: 100px;
 }
 /*taking care of input searchVideo box*/
-input[type="text"]{
+input[type="text"]:not(.input){
     width: 600px;
     height: 41.5px;
     padding-right: 50px;
@@ -317,12 +317,30 @@ footer li a:hover{
     position: fixed;
     z-index: 1;
     width: 350px;
-    height: 200px;
+    height: 350px;
     margin-top: 10.4em;
     /*margin-left: 35%;*/
     padding: 30px;
     left: 35%;
     background: #f4fffc;
+    line-height: 30px;
+}
+
+#ebook-div input[type="text"]{
+    width: 310px;
+}
+#upload-btn{
+    height:30px;
+    width: 70px;
+    background: #c4ffcd;
+    color: #000;
+    border: none;
+}
+
+#upload-btn:hover{
+    background: black;
+    color: #ffffff;
+    cursor: pointer;
 }
 /*toggle class to marge left the upload box when menu box opened*/
 .toggleUploadBox{
