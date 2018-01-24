@@ -4,6 +4,9 @@ var $loadBtn = $('#load-btn');
 var $btnSize = $('.pagingLoad-btn');
 var $upload = $('#ebook-div');
 var $uploadIcon = $('#upload-icon');
+var $tabBtn = $('.tab');
+var $tabContent = $('.tab-content');
+var $uploadLink = $('#uploads-links');
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -14,14 +17,8 @@ $('nav').hide();
 $('#apps-links').hide();
 
 //hiding upload box
-$upload.hide();
-
-//showing children on mouseover and hiding on mouseleave
-$("#upload-links").mouseenter(function () {
-    $('#upload-children').show();
-}).mouseleave(function () {
-    $('#upload-children').hide();
-});
+// $upload.hide();
+$uploadLink.hide();
 
 //on mouseover change menu-item background color
 $('.menu-item').mouseenter(function () {
@@ -38,7 +35,13 @@ $('.app-item').mouseenter(function () {
 }).mouseleave(function () {
     $(this).css('background-color','#f7f6ff');
 });
-
+//on mouseover change upload-item background color
+$('.upload-item').mouseenter(function () {
+    $(this).css('background-color','#fff');
+    $(this).css('cursor','pointer');
+}).mouseleave(function () {
+    $(this).css('background-color','#f7f6ff');
+});
 //toggle menu when menu button clicked and handle rotation of menu icon
 $('#menu-icon').click(function () {
     $(this).toggleClass('rotateEffect');
@@ -62,6 +65,5 @@ $uploadIcon.mouseenter(function () {
 });
 $uploadIcon.click(function () {
     $(this).toggleClass('rotateEffect');
-    $upload.slideToggle();
+    $uploadLink.toggle();
 });
-

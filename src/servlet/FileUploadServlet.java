@@ -15,24 +15,6 @@ import javax.servlet.http.Part;
 @WebServlet(name = "FileUploadServlet")
 @MultipartConfig(maxFileSize = 169999999)
 public class FileUploadServlet extends HttpServlet {
-//    private static final String UPLOAD_DIR = "/Users/mac/Documents/workspace/E-Site/web/uploadsTest";
-//    @Override
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        get image path
-//        String path = request.getServletContext().getRealPath(UPLOAD_DIR + File.separator);
-//
-//        File files = new File(path);
-//        response.setContentType("image/png");
-//        go through the files in dir
-//        for (String file : files.list()){
-//            File f = new File(path + file);
-//            BufferedImage bufferedImage = ImageIO.read(f);
-//            OutputStream outputStream = response.getOutputStream();
-//            ImageIO.write(bufferedImage, "png", outputStream);
-//
-//            outputStream.close();
-//        }
-//    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

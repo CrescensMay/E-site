@@ -9,7 +9,7 @@
         <%
             try {
                 BookDao db_connection = new BookDao();
-                Connection connection = db_connection.getConnection();
+                Connection connection = BookDao.getConnection();
 
                 byte[] fileData = null;
                 String sql = "SELECT * FROM image_table";

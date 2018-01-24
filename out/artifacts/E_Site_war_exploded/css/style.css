@@ -122,7 +122,10 @@ input[type="text"]:not(.input){
 .app-item{
     width:auto;
 }
-
+/*upload item width*/
+.upload-item{
+    width: auto;
+}
 /*rotate menu icon when clicked function-class at the same time*/
 .rotateEffect{
     transform: rotate(45deg);
@@ -154,6 +157,42 @@ input[type="text"]:not(.input){
     background-image: url("/images/music1.png");
 }
 .menu-links li.book a{
+    background-image: url("/images/ebook1.png");
+}
+
+/*uploads links design*/
+#uploads-links{
+    position: fixed;
+    z-index: 1;
+    margin-top: 5.6em;
+    /*position: absolute;*/
+    background: #f7f6ff;
+    letter-spacing: .5px;
+    line-height: 35px;
+    width: 250px;
+    left: 66%;
+}
+#uploads-links a{
+    color: #000000;
+}
+#uploads-links ul a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+#uploads-links li.movie a{
+    background-image: url("/images/movie1.png");
+}
+#uploads-links li.tv a{
+    background-image: url("/images/tvshow4.png");
+}
+#uploads-links li.music a{
+    background-image: url("/images/music1.png");
+}
+#uploads-links li.book a{
     background-image: url("/images/ebook1.png");
 }
 
@@ -307,7 +346,6 @@ footer li a:hover{
 .list-item-main img{
     width: 210px;
     height: 120px;
-    /*border: solid 3px white;*/
 }
 .list-div-main{
     /*line-height: 5px;*/
@@ -342,6 +380,7 @@ footer li a:hover{
     color: #ffffff;
     cursor: pointer;
 }
+/*work on button tabs*/
 /*toggle class to marge left the upload box when menu box opened*/
 .toggleUploadBox{
     margin-left: 6.5%;

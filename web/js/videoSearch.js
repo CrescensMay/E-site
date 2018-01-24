@@ -285,7 +285,7 @@ function getMainOutput(item) {
         '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
         '<img src="' + thumb + '" title="' + description + '">' +
         '<h5 style="margin-left: 2px;"><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h5>' +
-        '<small class="channel-date">By <span class="cTitle">' + channelTitle + ' </span><br>' + videoDate + '</small>' +
+        '<section style="margin-top: 40px;"><small class="channel-date">*<span class="cTitle">' + channelTitle + ' </span><br>' + videoDate + '</small></section>' +
         '</a>' +
         '</li>' +
         '';
