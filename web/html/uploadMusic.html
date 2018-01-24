@@ -1,1 +1,89 @@
-<p>Upload music</p>
+<div id="ebook-div">
+    <form id="upload-form" action="FileUploadServlet" method="post" enctype="multipart/form-data">
+        <label for="title">Title</label><br>
+        <input type="text" class="input" id="title" name="image_title"><br>
+        <label for="author">Artist</label><br>
+        <input type="text" id="author" class="input" name="author"><br>
+        <label>Release Date</label>
+        <section>
+            <label for="year"><small>Year</small></label>
+            <select id="year" name="year">
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+            </select>
+            <label for="month"><small>Month</small></label>
+            <select id="month" name="month">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            <label for="day"><small>Day</small></label>
+            <select id="day" name="day">
+                <option>31</option>
+                <option>30</option>
+                <option>29</option>
+                <option>28</option>
+                <option>27</option>
+                <option>26</option>
+                <option>25</option>
+                <option>24</option>
+                <option>23</option>
+                <option>22</option>
+                <option>21</option>
+                <option>20</option>
+                <option>19</option>
+                <option>18</option>
+                <option>17</option>
+                <option>16</option>
+                <option>15</option>
+                <option>14</option>
+                <option>13</option>
+                <option>12</option>
+                <option>11</option>
+                <option>10</option>
+                <option>9</option>
+                <option>8</option>
+                <option>7</option>
+                <option>6</option>
+                <option>5</option>
+                <option>4</option>
+                <option>3</option>
+                <option>2</option>
+                <option>1</option>
+            </select>
+        </section>
+        <label for="publisher">Producer</label><br>
+        <input type="text" id="publisher" class="input" name="publisher"><br>
+        <label for="cover">Cover</label><br>
+        <input type="file" id="cover" name="cover_file"><br>
+        <label for="file">File</label><br>
+        <input type="file" id="file" name="image_file"><br>
+        <input type="submit" id="upload-btn" value="Upload">
+    </form>
+    <br>
+</div>
