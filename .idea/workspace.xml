@@ -7,21 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0d337d-2fbf-4277-b531-c2e351418e01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/musics.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resultMusic.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resultShows.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/tvShow.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/uploadMusic.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/uploadShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadMusic.html" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadMusic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadTvShow.html" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadTvShow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/movies.jsp" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/movies.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/header.html" afterPath="$PROJECT_DIR$/web/html/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/nav.html" afterPath="$PROJECT_DIR$/web/html/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/uploadMusic.html" afterPath="$PROJECT_DIR$/web/html/uploadMusic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/uploadTvShow.html" afterPath="$PROJECT_DIR$/web/html/uploadTvShow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/uploads.html" afterPath="$PROJECT_DIR$/web/html/uploads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/videoSearch.js" afterPath="$PROJECT_DIR$/web/js/videoSearch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/movies.jsp" afterPath="$PROJECT_DIR$/web/movies.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/musics.jsp" afterPath="$PROJECT_DIR$/web/musics.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resultEbook.jsp" afterPath="$PROJECT_DIR$/web/resultEbook.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/tvShow.jsp" afterPath="$PROJECT_DIR$/web/tvShow.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,18 +56,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultMovies.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resultMovies.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -83,28 +66,8 @@
       <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/html/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/html/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="musics.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/musics.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="55">
+              <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -113,48 +76,55 @@
       <file leaf-file-name="eBook.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/eBook.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="255">
+              <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultMusic.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resultMusic.jsp">
+      <file leaf-file-name="videoSearch.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="165">
+              <caret line="283" column="42" lean-forward="false" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
+              <folding>
+                <marker date="1516814513000" expanded="true" signature="8432:8449" ph="..." />
+                <marker date="1516814513000" expanded="true" signature="8571:8588" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movies.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/movies.jsp">
+      <file leaf-file-name="uploadBook.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/uploadBook.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultShows.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resultShows.jsp">
+      <file leaf-file-name="resultEbook.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/resultEbook.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="108">
+              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#section#0;n#!!top" expanded="true" />
+                <marker date="1516820308000" expanded="true" signature="484:509" ph="SELECT * FRO... image_table" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tvShow.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tvShow.jsp">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="174">
+              <caret line="369" column="17" lean-forward="true" selection-start-line="369" selection-start-column="17" selection-end-line="369" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -212,29 +182,30 @@
         <option value="$PROJECT_DIR$/src/bean/Book.java" />
         <option value="$PROJECT_DIR$/src/servlet/FileUploadServlet.java" />
         <option value="$PROJECT_DIR$/web/results.jsp" />
-        <option value="$PROJECT_DIR$/web/js/videoSearch.js" />
         <option value="$PROJECT_DIR$/web/html/uploadEbook.html" />
         <option value="$PROJECT_DIR$/web/resultMovies.jsp" />
         <option value="$PROJECT_DIR$/web/uplaods.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/js/jquery.js" />
         <option value="$PROJECT_DIR$/web/uploadBook.jsp" />
         <option value="$PROJECT_DIR$/web/uploadMovie.jsp" />
         <option value="$PROJECT_DIR$/web/html/uploadMovie.html" />
-        <option value="$PROJECT_DIR$/web/html/uploads.html" />
-        <option value="$PROJECT_DIR$/web/eBook.jsp" />
         <option value="$PROJECT_DIR$/web/html/uploadMusic.html" />
         <option value="$PROJECT_DIR$/web/html/uploadTvShow.html" />
         <option value="$PROJECT_DIR$/web/uploadShow.jsp" />
         <option value="$PROJECT_DIR$/web/resultShows.jsp" />
         <option value="$PROJECT_DIR$/web/uploadMusic.jsp" />
         <option value="$PROJECT_DIR$/web/resultMusic.jsp" />
-        <option value="$PROJECT_DIR$/web/musics.jsp" />
-        <option value="$PROJECT_DIR$/web/movies.jsp" />
-        <option value="$PROJECT_DIR$/web/tvShow.jsp" />
-        <option value="$PROJECT_DIR$/web/html/nav.html" />
         <option value="$PROJECT_DIR$/web/html/header.html" />
+        <option value="$PROJECT_DIR$/web/html/uploads.html" />
+        <option value="$PROJECT_DIR$/web/html/nav.html" />
+        <option value="$PROJECT_DIR$/web/movies.jsp" />
+        <option value="$PROJECT_DIR$/web/musics.jsp" />
+        <option value="$PROJECT_DIR$/web/tvShow.jsp" />
+        <option value="$PROJECT_DIR$/web/eBook.jsp" />
+        <option value="$PROJECT_DIR$/web/js/videoSearch.js" />
+        <option value="$PROJECT_DIR$/web/resultEbook.jsp" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
     </option>
   </component>
@@ -297,12 +268,6 @@
               <item name="E-Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="E-Site" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="E-Site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-Site" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="E-Site" type="b2602c69:ProjectViewProjectNode" />
@@ -602,12 +567,12 @@
       <workItem from="1516225813055" duration="112857000" />
       <workItem from="1516563037336" duration="2362000" />
       <workItem from="1516587275931" duration="2495000" />
-      <workItem from="1516600895815" duration="62272000" />
+      <workItem from="1516600895815" duration="69167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290542000" />
+    <option name="totallyTimeSpent" value="297437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="703" extended-state="0" />
@@ -805,17 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="287" column="71" lean-forward="false" selection-start-line="287" selection-start-column="71" selection-end-line="287" selection-end-column="71" />
-          <folding>
-            <marker date="1516796635000" expanded="true" signature="8475:8492" ph="..." />
-            <marker date="1516796635000" expanded="true" signature="8614:8631" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/FileUploadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -830,14 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2602">
-          <caret line="175" column="19" lean-forward="false" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -862,22 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/uploadEbook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="29" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/uploads.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -930,14 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploadBook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/uploadMusic.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -946,68 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resultEbook.jsp">
+    <entry file="file://$PROJECT_DIR$/web/html/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <marker date="1516797320000" expanded="true" signature="486:511" ph="SELECT * FRO... image_table" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resultMusic.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/eBook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/musics.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/tvShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resultShows.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/movies.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="135">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1020,19 +884,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/nav.html">
+    <entry file="file://$PROJECT_DIR$/web/resultMusic.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/header.html">
+    <entry file="file://$PROJECT_DIR$/web/resultShows.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/musics.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="18" column="64" lean-forward="false" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tvShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="18" column="64" lean-forward="false" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/movies.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/uploadEbook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="82" column="29" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/uploads.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/eBook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploadBook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="283" column="42" lean-forward="false" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
+          <folding>
+            <marker date="1516814513000" expanded="true" signature="8432:8449" ph="..." />
+            <marker date="1516814513000" expanded="true" signature="8571:8588" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="369" column="17" lean-forward="true" selection-start-line="369" selection-start-column="17" selection-end-line="369" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resultEbook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#section#0;n#!!top" expanded="true" />
+            <marker date="1516820308000" expanded="true" signature="484:509" ph="SELECT * FRO... image_table" />
+          </folding>
         </state>
       </provider>
     </entry>

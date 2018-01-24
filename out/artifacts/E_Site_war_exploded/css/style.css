@@ -347,8 +347,28 @@ footer li a:hover{
     width: 210px;
     height: 120px;
 }
-.list-div-main{
-    /*line-height: 5px;*/
+/*book list item design*/
+.book-item-main{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /*margin-left: 1px;*/
+    float: left;
+    overflow: auto;
+}
+.book-item-main a{
+    color: #ffffff;
+}
+.book-item-main img{
+    border: 1px solid #ffffff;
+    margin-left: 5px;
+    width: 210px;
+    height: 180px;
+}
+.book-item-main p{
+    /*border: 1px solid #ffffff;*/
+    
+    margin-left: 5px;
+    width: 210px;
 }
 /*design the update box*/
 #ebook-div{

@@ -281,7 +281,6 @@ function getMainOutput(item) {
     var output = '';
     //Build ouptput string
     output = '<li class="list-item-main">' +
-        // '<div class="list-div-main">' +
         '<a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' +
         '<img src="' + thumb + '" title="' + description + '">' +
         '<h5 style="margin-left: 2px;"><a data-fancybox href="http://www.youtube.com/embed/' + videoId + '">' + title + '</a></h5>' +

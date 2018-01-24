@@ -16,6 +16,7 @@
 <jsp:include page="resultMusic.jsp"/>
 
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/videoSearch.js"></script>
 </body>
 </html>
 
