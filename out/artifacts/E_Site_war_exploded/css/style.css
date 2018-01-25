@@ -382,6 +382,19 @@ footer li a:hover{
     background: #ffa6a0;
 }
 
+/*details button design*/
+.detail-btn{
+    border: none;
+    color: #ffffff;
+    width: 210px;
+    background: #ff7770;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.detail-btn:hover{
+    background: #ffa6a0;
+}
+
 /*details button box*/
 #details{
     background: #ff7770;

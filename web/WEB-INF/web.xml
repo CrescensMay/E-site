@@ -5,7 +5,7 @@
          version="3.1">
     <servlet>
         <servlet-name>uploadServlet</servlet-name>
-        <servlet-class>servlet.FileUploadServlet</servlet-class>
+        <servlet-class>servlet.eBookUploadServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>uploadServlet</servlet-name>

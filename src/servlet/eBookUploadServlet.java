@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-@WebServlet(name = "FileUploadServlet")
+@WebServlet(name = "eBookUploadServlet")
 @MultipartConfig(maxFileSize = 169999999)
-public class FileUploadServlet extends HttpServlet {
+public class eBookUploadServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -67,7 +67,7 @@ public class FileUploadServlet extends HttpServlet {
 
         } else {
             System.out.println("Couldn't upload the file");
-            request.getRequestDispatcher("eBook.jsp").include(request, response);
+            request.getRequestDispatcher("uploadBook.jsp").include(request, response);
         }
 
     }

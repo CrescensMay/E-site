@@ -3,6 +3,7 @@ package bean;
 import java.io.InputStream;
 
 public class Book {
+    private int id;
     private String title;
     private String author;
     private int year;
@@ -14,6 +15,14 @@ public class Book {
     private InputStream cover;
     private InputStream file;
     private String date;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;

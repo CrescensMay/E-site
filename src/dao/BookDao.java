@@ -52,10 +52,35 @@ public class BookDao {
         return status;
     }
 
+    //get book by id
+    public static Book getBookById(int id){
+        Book book = new Book();
+
+        try {
+            Connection connection = BookDao.getConnection();
+            String sql = "SELECT * FROM image_table where id=?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()){
+                book.setId(resultSet.getInt("id"));
+                book.setTitle(resultSet.getString("title"));
+                book.setAuthor(resultSet.getString("author"));
+                book.setDate(resultSet.getString("published_date"));
+                book.setPublisher(resultSet.getString("publisher"));
+                book.setCover(resultSet.getBinaryStream("cover"));
+                book.setCover(resultSet.getBinaryStream("file"));
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return book;
+    }
     //get all books
     public static List<Book> getBooks(){
         List<Book> books = new ArrayList<>();
-        Connection connection = null;
+        Connection connection;
         try {
             connection = BookDao.getConnection();
             String query = "SELECT * FROM image_table";

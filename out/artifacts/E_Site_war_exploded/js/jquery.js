@@ -9,7 +9,7 @@ var $tabContent = $('.tab-content');
 var $uploadLink = $('#uploads-links');
 var $close = $('.close');
 var $modal = $('#myModal');
-var $detailBtn = $('.dowload-btn');
+var $detailBtn = $('.detail-btn');
 var $detailsBox = $('#details');
 
 //hiding all children except the child link

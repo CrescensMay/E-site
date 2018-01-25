@@ -14,6 +14,7 @@
     <jsp:include page="html/apps.html"/>
     <jsp:include page="html/nav.html"/>
     <jsp:include page="resultEbook.jsp"/>
+    <jsp:include page="description.jsp"/>
 
     <script type="text/javascript" src="js/jquery.js"></script>
 </body>
