@@ -1,9 +1,9 @@
 <div id="ebook-div">
-    <form id="upload-form" action="FileUploadServlet" method="post" enctype="multipart/form-data">
+    <form id="upload-form" action="musicFileUpload" method="post" enctype="multipart/form-data">
         <label for="title">Title</label><br>
-        <input type="text" class="input" id="title" name="image_title"><br>
-        <label for="author">Artist</label><br>
-        <input type="text" id="author" class="input" name="author"><br>
+        <input type="text" class="input" id="title" name="music_title"><br>
+        <label for="artist">Artist</label><br>
+        <input type="text" id="artist" class="input" name="artist"><br>
         <label>Release Date</label>
         <section>
             <label for="year"><small>Year</small></label>
@@ -77,12 +77,12 @@
                 <option>1</option>
             </select>
         </section>
-        <label for="publisher">Producer</label><br>
-        <input type="text" id="publisher" class="input" name="publisher"><br>
-        <label for="cover">Cover</label><br>
-        <input type="file" id="cover" name="cover_file"><br>
-        <label for="file">File</label><br>
-        <input type="file" id="file" name="image_file"><br>
+        <label for="producer">Producer</label><br>
+        <input type="text" id="producer" class="input" name="producer"><br>
+        <label for="music_cover">Cover</label><br>
+        <input type="file" id="music_cover" name="music_cover"><br>
+        <label for="music_file">File</label><br>
+        <input type="file" id="music_file" name="music_file"><br>
         <input type="submit" id="upload-btn" value="Upload">
     </form>
     <br>

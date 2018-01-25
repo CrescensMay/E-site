@@ -1,19 +1,19 @@
-<%@ page import="dao.BookDao" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.Base64" %>
+<%@ page import="dao.ConnectionDao" %>
 
 <section id="video-container">
     <h4 class="video-heading" style="margin-left: 10px;"><p></p></h4>
     <ul id="result-video">
         <%
             try {
-                Connection connection = BookDao.getConnection();
+                Connection connection = ConnectionDao.getConnection();
                 byte[] fileData;
                 byte[] coverImg;
                 String title;
                 String author;
                 String published_date;
-                String sql = "SELECT * FROM image_table";
+                String sql = "SELECT * FROM book_table";
                 PreparedStatement preparedStatement = connection.prepareStatement(sql);
                 ResultSet resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()){

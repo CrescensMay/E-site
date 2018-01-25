@@ -11,4 +11,13 @@
         <servlet-name>uploadServlet</servlet-name>
         <url-pattern>/FileUploadServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>musicUplaod</servlet-name>
+        <servlet-class>servlet.MusicUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>musicUplaod</servlet-name>
+        <url-pattern>/musicFileUpload</url-pattern>
+    </servlet-mapping>
 </web-app>

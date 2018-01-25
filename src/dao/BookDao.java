@@ -7,32 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookDao {
-    //database connection
-    public static Connection getConnection(){
-        Connection connection = null;
-        String driver = "com.mysql.jdbc.Driver";
-        String user = "root";
-        String password = "crescens";
-        String url = "jdbc:mysql://localhost:3306/image";
-
-        try {
-            Class.forName(driver);
-            connection = DriverManager.getConnection(url, user, password);
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
-        }
-
-        return connection;
-    }
-
     //save book into DB
     public static int saveBook(Book book){
         int status = 0;
         Connection connection;
 
         try {
-            String query = "INSERT INTO image_table(title, author, published_date, publisher, cover, file) VALUES (?, ?, ?, ?, ?, ?)";
-            connection = BookDao.getConnection();
+            String query = "INSERT INTO book_table(title, author, published_date, publisher, cover, file) VALUES (?, ?, ?, ?, ?, ?)";
+            connection = ConnectionDao.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, book.getTitle());
             preparedStatement.setString(2, book.getAuthor());
@@ -57,8 +39,8 @@ public class BookDao {
         Book book = new Book();
 
         try {
-            Connection connection = BookDao.getConnection();
-            String sql = "SELECT * FROM image_table where id=?";
+            Connection connection = ConnectionDao.getConnection();
+            String sql = "SELECT * FROM book_table where id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -69,7 +51,7 @@ public class BookDao {
                 book.setDate(resultSet.getString("published_date"));
                 book.setPublisher(resultSet.getString("publisher"));
                 book.setCover(resultSet.getBinaryStream("cover"));
-                book.setCover(resultSet.getBinaryStream("file"));
+                book.setFile(resultSet.getBinaryStream("file"));
 
             }
         } catch (SQLException e) {
@@ -82,8 +64,8 @@ public class BookDao {
         List<Book> books = new ArrayList<>();
         Connection connection;
         try {
-            connection = BookDao.getConnection();
-            String query = "SELECT * FROM image_table";
+            connection = ConnectionDao.getConnection();
+            String query = "SELECT * FROM book_table";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -94,7 +76,7 @@ public class BookDao {
                 book.setDate(resultSet.getString(3));
                 book.setPublisher(resultSet.getString(4));
                 book.setCover(resultSet.getBinaryStream(5));
-                book.setCover(resultSet.getBinaryStream(6));
+                book.setFile(resultSet.getBinaryStream(6));
 
                 books.add(book);
             }

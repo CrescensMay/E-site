@@ -25,7 +25,7 @@ public class eBookUploadServlet extends HttpServlet {
         InputStream inputStreamCover = null;
         InputStream inputStreamImg = null;
         int sizeCover;
-        int sizeImg;
+        int sizeFile;
         String title = request.getParameter("image_title");
         String author = request.getParameter("author");
         String year = request.getParameter("year");
@@ -54,11 +54,11 @@ public class eBookUploadServlet extends HttpServlet {
         book.setPublisher(publisher);
         if (inputStreamCover != null && inputStreamImg != null){
             sizeCover = (int) cover.getSize();
-            sizeImg = (int) file.getSize();
+            sizeFile = (int) file.getSize();
             book.setCover(inputStreamCover);
             book.setFile(inputStreamImg);
             book.setCoverSize(sizeCover);
-            book.setImgSize(sizeImg);
+            book.setImgSize(sizeFile);
         }
         int status = BookDao.saveBook(book);
         if (status > 0){
