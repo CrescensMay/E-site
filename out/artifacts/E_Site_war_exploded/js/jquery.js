@@ -7,6 +7,11 @@ var $uploadIcon = $('#upload-icon');
 var $tabBtn = $('.tab');
 var $tabContent = $('.tab-content');
 var $uploadLink = $('#uploads-links');
+var $close = $('.close');
+var $modal = $('#myModal');
+var $detailBtn = $('.dowload-btn');
+var $detailsBox = $('#details');
+
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -19,6 +24,9 @@ $('#apps-links').hide();
 //hiding upload box
 // $upload.hide();
 $uploadLink.hide();
+
+//hiding details box
+$modal.hide();
 
 //on mouseover change menu-item background color
 $('.menu-item').mouseenter(function () {
@@ -66,4 +74,21 @@ $uploadIcon.mouseenter(function () {
 $uploadIcon.click(function () {
     $(this).toggleClass('rotateEffect');
     $uploadLink.toggle();
+});
+
+//manipulate modal box
+//show box on click
+$detailBtn.click(function () {
+   $modal.show();
+});
+
+//hide box when close btn clicked
+$close.click(function () {
+   $modal.hide();
+});
+
+$(window).click(function (event) {
+    if ($(event.target).is($modal)){
+        $modal.hide();
+    }
 });
