@@ -14,14 +14,15 @@ import java.io.IOException;
 import java.io.InputStream;
 
 @WebServlet(name = "MusicUploadServlet")
-@MultipartConfig(maxFileSize = 169999999)
+@MultipartConfig(maxFileSize = 799999999)
 public class MusicUploadServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         InputStream inputStreamCover = null;
-        InputStream inputStreamImg = null;
+        InputStream inputStreamZik = null;
         int sizeCover;
-        int sizeImg;
+        int sizeFile;
         String title = request.getParameter("music_title");
         String artist = request.getParameter("artist");
         String year = request.getParameter("year");
@@ -40,7 +41,7 @@ public class MusicUploadServlet extends HttpServlet {
             System.out.println(cover_File.getSize());
             System.out.println(cover_File.getContentType());
 
-            inputStreamImg = music_file.getInputStream();
+            inputStreamZik = music_file.getInputStream();
             inputStreamCover = cover_File.getInputStream();
         }
         Music music = new Music();
@@ -48,13 +49,13 @@ public class MusicUploadServlet extends HttpServlet {
         music.setArtist(artist);
         music.setRelease_date(date);
         music.setProducer(producer);
-        if (inputStreamCover != null && inputStreamImg != null){
+        if (inputStreamCover != null && inputStreamZik != null){
             sizeCover = (int) cover_File.getSize();
-            sizeImg = (int) music_file.getSize();
+            sizeFile = (int) music_file.getSize();
             music.setCover(inputStreamCover);
-            music.setFile(inputStreamImg);
+            music.setFile(inputStreamZik);
             music.setCoverSize(sizeCover);
-            music.setFileSize(sizeImg);
+            music.setFileSize(sizeFile);
         }
         int status = MusicDao.saveMusic(music);
         if (status > 0){

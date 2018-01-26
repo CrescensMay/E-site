@@ -33,20 +33,13 @@
                     request.setAttribute("title", title);
                     request.setAttribute("artist", artist);
                     request.setAttribute("date", published_date);
-//                    byte[] bytes = new byte[1024];
-//                    if (fileData.read(bytes) > 0){
-
         %>
         <li class="book-item-main">
-            <video controls>
-                <source src="data:video/mp4;base64,${file}" type="video/mp4">
-            </video>
-            <a data-fancybox src="data:video/mp4;base64,${file}">view</a>
-            <img src="data:image/png;base64,${cover}" alt="image_type_check">
+            <img src="data:image/png;base64,${cover}" alt="image_type_check"><br>
+            <audio controls="controls" src="data:audio/mp3;base64,${file}"></audio>
             <p><small>Title: </small>${title}</p>
             <p><small>Author: </small>${artist}</p>
-            <%--<button class="detail-btn">Details</button><br>--%>
-            <a href="data:video/mp4;base64,${file}" download="${title}"><button class="dowload-btn">Download</button></a>
+            <a href="data:audio/mp3;base64,${file}" download="${title}"><button class="dowload-btn">Download</button></a>
         </li>
         <%
 //                    }

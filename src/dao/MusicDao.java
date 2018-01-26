@@ -17,9 +17,9 @@ public class MusicDao {
         Connection connection;
 
         try {
-            String query = "INSERT INTO music_table(title, artist, released_date, producer, cover, file) VALUES (?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO music_table(title, artist, released_date, producer, cover, file) VALUES (?, ?, ?, ?, ?, ?)";
             connection = ConnectionDao.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, music.getTitle());
             preparedStatement.setString(2, music.getArtist());
             preparedStatement.setString(3, music.getRelease_date());
