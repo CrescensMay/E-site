@@ -6,7 +6,7 @@
 <%@ page import="dao.ConnectionDao" %>
 <%@ page import="java.io.InputStream" %>
 <section id="video-container">
-    <h4 class="video-heading" style="margin-left: 10px;"><p>Result Music</p></h4>
+    <h4 class="video-heading" style="margin-left: 10px;"><p></p></h4>
     <ul id="result-video">
         <%
             try {
@@ -35,14 +35,14 @@
                     request.setAttribute("date", published_date);
         %>
         <li class="book-item-main">
-            <img src="data:image/png;base64,${cover}" alt="image_type_check"><br>
-            <audio controls="controls" src="data:audio/mp3;base64,${file}"></audio>
-            <p><small>Title: </small>${title}</p>
-            <p><small>Author: </small>${artist}</p>
+            <a class="listen-music" href="data:audio/mp3;base64,${file}">
+                <img src="data:image/png;base64,${cover}">
+                <h4 style="margin-left: 10px;margin-top: 3px;">${title}</h4>
+            </a>
+            <p style="margin-left: 10px;margin-top:0;"><small>By ${artist}</small></p>
             <a href="data:audio/mp3;base64,${file}" download="${title}"><button class="dowload-btn">Download</button></a>
         </li>
         <%
-//                    }
                 }
 
             } catch (SQLException e) {

@@ -12,21 +12,23 @@ var $modal = $('#myModal');
 var $detailBtn = $('.detail-btn');
 var $detailsBox = $('#details');
 
-//hiding all children except the child link
-$('#upload-children').hide();
+function hideOnLoad() {
+    //hiding all children except the child link
+    $('#upload-children').hide();
 
 //hiding menu at the beginning(nav)
-$('nav').hide();
+    $('nav').hide();
 
 //hiding the apps menu
-$('#apps-links').hide();
+    $('#apps-links').hide();
 
 //hiding upload box
 // $upload.hide();
-$uploadLink.hide();
+    $uploadLink.hide();
 
 //hiding details box
-$modal.hide();
+    $modal.hide();
+}
 
 //on mouseover change menu-item background color
 $('.menu-item').mouseenter(function () {

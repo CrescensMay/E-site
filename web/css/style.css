@@ -369,6 +369,10 @@ footer li a:hover{
     margin-left: 5px;
     width: 210px;
 }
+/*take care of audio player*/
+#audioPlayer{
+    width: 210px;
+}
 /*dowload button design*/
 .dowload-btn{
     border: none;
