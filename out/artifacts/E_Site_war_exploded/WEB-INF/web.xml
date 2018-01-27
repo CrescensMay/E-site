@@ -20,4 +20,12 @@
         <servlet-name>musicUplaod</servlet-name>
         <url-pattern>/musicFileUpload</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>movieUpload</servlet-name>
+        <servlet-class>servlet.MovieUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>movieUpload</servlet-name>
+        <url-pattern>/movieFileUpload</url-pattern>
+    </servlet-mapping>
 </web-app>

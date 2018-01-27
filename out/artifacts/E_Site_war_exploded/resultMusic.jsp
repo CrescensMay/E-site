@@ -39,7 +39,7 @@
                 <img src="data:image/png;base64,${cover}">
                 <h4 style="margin-left: 10px;margin-top: 3px;">${title}</h4>
             </a>
-            <p style="margin-left: 10px;margin-top:0;"><small>By ${artist}</small></p>
+            <p style="margin-left: 10px;"><small>By ${artist}</small></p>
             <a href="data:audio/mp3;base64,${file}" download="${title}"><button class="dowload-btn">Download</button></a>
         </li>
         <%

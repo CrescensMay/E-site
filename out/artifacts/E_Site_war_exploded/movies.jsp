@@ -8,13 +8,18 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <title>Movies</title>
 </head>
-<body onload="hideOnLoad()">
+<body>
     <jsp:include page="html/header.html"/>
     <jsp:include page="html/uploads.html"/>
     <jsp:include page="html/apps.html"/>
     <jsp:include page="html/nav.html"/>
     <jsp:include page="resultMovies.jsp"/>
 
+    <script>
+        $('.listen-music').fancybox({
+            type:'iframe'
+        });
+    </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/videoSearch.js"></script>
 </body>

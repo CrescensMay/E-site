@@ -8,7 +8,7 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <title>Music</title>
 </head>
-<body onload="hideOnLoad()">
+<body>
 <jsp:include page="html/header.html"/>
 <jsp:include page="html/uploads.html"/>
 <jsp:include page="html/apps.html"/>

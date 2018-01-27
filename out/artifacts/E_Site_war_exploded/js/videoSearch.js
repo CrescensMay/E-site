@@ -74,8 +74,8 @@ function searchVideo() {
             part: 'snippet, id',
             q: query,
             type: 'video',
-            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
-            // maxResults: '25'
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
+            maxResults: '10'
         },
         function (data) {
             //go through paging
@@ -122,7 +122,8 @@ function nextPage() {
             q: qry,
             pageToken: token,
             type: 'video',
-            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
+            maxResults: '10'
         },
         function (data) {
             //go through paging
@@ -172,7 +173,8 @@ function prevPage() {
             q: qry,
             pageToken: token,
             type: 'video',
-            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA'
+            key:'AIzaSyDBFWMwiOM6ptHRrQpTw_8cVUzJyULucIA',
+            maxResults: '10'
         },
         function (data) {
             //go through paging
