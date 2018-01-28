@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 @WebServlet(name = "eBookUploadServlet")
-@MultipartConfig(maxFileSize = 169999999)
+@MultipartConfig(maxFileSize = 799999999)
 public class eBookUploadServlet extends HttpServlet {
 
     @Override

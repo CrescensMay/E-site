@@ -15,6 +15,12 @@
 <jsp:include page="html/nav.html"/>
 <jsp:include page="resultShows.jsp"/>
 
+<script>
+    $('.listen-music').fancybox({
+        type:'iframe'
+    });
+</script>
+
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/videoSearch.js"></script>
 </body>
