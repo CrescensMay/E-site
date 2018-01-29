@@ -7,28 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0d337d-2fbf-4277-b531-c2e351418e01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dao/TVShowDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/ShowUploadServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/classes/dao/MovieDao.class" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/classes/dao/MovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/classes/servlet/eBookUploadServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/classes/servlet/eBookUploadServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/E-Site/dao/MovieDao.class" afterPath="$PROJECT_DIR$/out/production/E-Site/dao/MovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/E-Site/servlet/eBookUploadServlet.class" afterPath="$PROJECT_DIR$/out/production/E-Site/servlet/eBookUploadServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/eeeb1977-d46f-4be7-8917-cb9655b6a38c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/eeeb1977-d46f-4be7-8917-cb9655b6a38c.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/html/newNav.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/html/newsResults.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bbc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/news.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadMovie.html" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadMovie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadTvShow.html" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/uploadTvShow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/resultShows.jsp" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/resultShows.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/tvShow.jsp" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/tvShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bean/Show.java" afterPath="$PROJECT_DIR$/src/bean/Show.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/MovieDao.java" afterPath="$PROJECT_DIR$/src/dao/MovieDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/eBookUploadServlet.java" afterPath="$PROJECT_DIR$/src/servlet/eBookUploadServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/uploadMovie.html" afterPath="$PROJECT_DIR$/web/html/uploadMovie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/uploadTvShow.html" afterPath="$PROJECT_DIR$/web/html/uploadTvShow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resultShows.jsp" afterPath="$PROJECT_DIR$/web/resultShows.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/tvShow.jsp" afterPath="$PROJECT_DIR$/web/tvShow.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/nav.html" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/nav.html" afterPath="$PROJECT_DIR$/web/html/nav.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,54 +48,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovieUploadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/MovieUploadServlet.java">
+      <file leaf-file-name="bbc.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/bbc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TVShowDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dao/TVShowDao.java">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="190">
+              <caret line="508" column="24" lean-forward="true" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="videoSearch.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1517088770000" expanded="true" signature="319:420" ph="INSERT INTO movie_table... " />
+                <marker date="1517086105000" expanded="true" signature="8490:8507" ph="..." />
+                <marker date="1517086105000" expanded="true" signature="8629:8646" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowUploadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/ShowUploadServlet.java">
+      <file leaf-file-name="newsResults.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/html/newsResults.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eBookUploadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/eBookUploadServlet.java">
+      <file leaf-file-name="news.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/news.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="136">
+              <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicUploadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/MusicUploadServlet.java">
+      <file leaf-file-name="resultEbook.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resultEbook.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="156">
+              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding>
+                <marker date="1517062467000" expanded="true" signature="534:558" ph="SELECT * FRO... image_table" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/html/nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -120,10 +129,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -146,10 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/html/ebook.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fc472d96-0d45-41c2-a811-cb259ca791ad/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/dao/DB_Connection.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/eeeb1977-d46f-4be7-8917-cb9655b6a38c/console_1.sql" />
         <option value="$PROJECT_DIR$/web/html/results.html" />
         <option value="$PROJECT_DIR$/web/results.jsp" />
         <option value="$PROJECT_DIR$/web/html/uploadEbook.html" />
@@ -160,7 +165,6 @@
         <option value="$PROJECT_DIR$/web/uploadMusic.jsp" />
         <option value="$PROJECT_DIR$/web/html/header.html" />
         <option value="$PROJECT_DIR$/web/html/uploads.html" />
-        <option value="$PROJECT_DIR$/web/html/nav.html" />
         <option value="$PROJECT_DIR$/web/html/description.html" />
         <option value="$PROJECT_DIR$/src/bean/Book.java" />
         <option value="$PROJECT_DIR$/web/description.jsp" />
@@ -172,8 +176,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/eeeb1977-d46f-4be7-8917-cb9655b6a38c/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/eeeb1977-d46f-4be7-8917-cb9655b6a38c/console_3.sql" />
         <option value="$PROJECT_DIR$/src/dao/MusicDao.java" />
-        <option value="$PROJECT_DIR$/web/resultEbook.jsp" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/resultMusic.jsp" />
         <option value="$PROJECT_DIR$/src/bean/Movie.java" />
         <option value="$PROJECT_DIR$/src/servlet/uploadMovieServlet.java" />
@@ -197,6 +199,13 @@
         <option value="$PROJECT_DIR$/src/servlet/eBookUploadServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/MusicUploadServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/ShowUploadServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/bbc.js" />
+        <option value="$PROJECT_DIR$/web/html/newsResults.html" />
+        <option value="$PROJECT_DIR$/web/html/nav.html" />
+        <option value="$PROJECT_DIR$/web/news.jsp" />
+        <option value="$PROJECT_DIR$/web/html/newNav.html" />
+        <option value="$PROJECT_DIR$/web/resultEbook.jsp" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
     </option>
   </component>
@@ -219,11 +228,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="387" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="979" />
-    <option name="height" value="703" />
+    <option name="width" value="1366" />
+    <option name="height" value="701" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -241,8 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,24 +263,17 @@
             </path>
             <path>
               <item name="E-Site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="E-Site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="mysql" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="E-Site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="mysql" type="70bed36:NamedLibraryElementNode" />
-              <item name="mysql.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="E-Site" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -569,15 +568,18 @@
       <workItem from="1516885437462" duration="47059000" />
       <workItem from="1517070799935" duration="6768000" />
       <workItem from="1517170627951" duration="4099000" />
-      <workItem from="1517176938139" duration="381000" />
+      <workItem from="1517176938139" duration="4380000" />
+      <workItem from="1517257902323" duration="723000" />
+      <workItem from="1517258739333" duration="1145000" />
+      <workItem from="1517264491606" duration="3533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372763000" />
+    <option name="totallyTimeSpent" value="382163000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="705" extended-state="6" />
+    <frame x="0" y="23" width="1366" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -590,13 +592,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33770493" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33663365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12613294" sideWeight="0.59653467" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12613294" sideWeight="0.40346536" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12839879" sideWeight="0.5597015" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12839879" sideWeight="0.4402985" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32326284" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24938272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -654,79 +656,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1520bebc-eb0b-4b4f-8f90-4bf453cd894d/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/88010c50-3169-43cf-acb8-a7317d950814/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc472d96-0d45-41c2-a811-cb259ca791ad/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc472d96-0d45-41c2-a811-cb259ca791ad/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/eeeb1977-d46f-4be7-8917-cb9655b6a38c/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/apps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/ebook.html" />
-    <entry file="file://$PROJECT_DIR$/web/html/mainResults.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uplaods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploadShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/uploads.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -734,24 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/description.html" />
-    <entry file="file://$PROJECT_DIR$/web/description.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#84#91#1#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/uploadEbook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -818,23 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6870">
-          <caret line="458" column="0" lean-forward="false" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resultEbook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <marker date="1517062467000" expanded="true" signature="534:558" ph="SELECT * FRO... image_table" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bean/Music.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -856,21 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1997">
-          <caret line="176" column="28" lean-forward="false" selection-start-line="176" selection-start-column="28" selection-end-line="176" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resultMusic.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -878,22 +758,6 @@
           <folding>
             <marker date="1517064598000" expanded="true" signature="714:739" ph="SELECT * FRO... music_table" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/eBook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/musics.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,14 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/movies.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/tvShow.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -990,19 +846,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/MovieUploadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/eBookUploadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,18 +864,166 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/mainResults.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/TVShowDao.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/MovieUploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/menu1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/ebook1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/music1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/tvshow4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/movie1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/news.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/newNav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/musics.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/movies.jsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/description.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/eBook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="508" column="24" lean-forward="true" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resultEbook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1517088770000" expanded="true" signature="319:420" ph="INSERT INTO movie_table... " />
+            <marker date="1517062467000" expanded="true" signature="534:558" ph="SELECT * FRO... image_table" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/bbc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <marker date="1517086105000" expanded="true" signature="8490:8507" ph="..." />
+            <marker date="1517086105000" expanded="true" signature="8629:8646" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/news.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/newsResults.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

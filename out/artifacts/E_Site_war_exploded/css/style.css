@@ -159,7 +159,9 @@ input[type="text"]:not(.input){
 .menu-links li.book a{
     background-image: url("/images/ebook1.png");
 }
-
+.menu-links li.news a{
+    background-image: url("/images/news.png");
+}
 /*uploads links design*/
 #uploads-links{
     position: fixed;
@@ -478,3 +480,32 @@ footer li a:hover{
 .toggleUploadBox{
     margin-left: 6.5%;
 }
+/*design new nav*/
+#news-div{
+    position: fixed;
+    z-index: 1;
+    /*background: #000000;*/
+    left: 37%;
+    top:11.4%;
+    /*width: 300px;*/
+    /*height: 60px;*/
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+#list-news li{
+    float: left;
+    display: block;
+    width: 90px;
+    margin: auto;
+    border: 1px solid #ffffff;
+    background: #000000;
+}
+#list-news a{
+    color: #ffffff;
+}
+#list-news li:hover{
+    background: #ffa6a0;
+}
+
