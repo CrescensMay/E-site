@@ -523,6 +523,7 @@ footer li a:hover{
     margin-left: 2px;
     position: relative;
     height: 40px;
+    cursor: pointer;
 }
 .list-item-news p{
     width: 310px;
@@ -537,6 +538,7 @@ footer li a:hover{
 .list-item-news img{
     width: 315px;
     height: 180px;
+    cursor: pointer;
 }
 .channel-date-news{
     color: #f4fffc;
@@ -544,5 +546,6 @@ footer li a:hover{
     margin-left: 2px;
     bottom: 100px;
     margin-top: 0;
+    float: right;
 }
 

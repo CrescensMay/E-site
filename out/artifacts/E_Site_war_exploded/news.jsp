@@ -41,8 +41,8 @@
 //            '</div>' +
 //            '</li>';
         output = '<li class="list-item-news">' +
-        '<a data-fancybox data-type="iframe" data-src="'+ url + '"><section style="position: absolute;"><h4><a data-fancybox data-type="iframe" data-src="' + url + '">' + title + '</a></h4>' +
-        '<p>'+ description + '</p></section></a>' +
+        '<section data-fancybox data-type="iframe" data-src="'+ url + '" style="position: absolute;cursor: pointer;"><h4>' + title + '</h4>' +
+        '<p>'+ description + '</p></section>' +
 //        '<section><small class="channel-date-news">*<span class="cTitle">' + author + ' </span>' + date + '</small></section>' +
         '<a data-fancybox data-type="iframe" data-src="' + url + '">' +
         '<img src="' + thumbnail + '" title="' + title + '\n\n' + description + '">' +
