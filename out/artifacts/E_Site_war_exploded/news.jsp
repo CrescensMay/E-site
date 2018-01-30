@@ -17,8 +17,40 @@
 <jsp:include page="html/nav.html"/>
 <jsp:include page="html/newsResults.html"/>
 <script>
-    $results = $('#result-video');
+    var $results = $('#result-video');
+    var $search = $('#searchField');
+    var $form = $('#search-form');
+    var $heading = $('.video-heading p');
+    //check input
+    $form.submit(function (e) {
+        e.preventDefault();
+        //if input null
+        if($search.val() === ''){
+            alert('Cannot remain empty');
+        }else {
+            searchNews();
+        }
 
+    });
+
+    //search any topic
+    function searchNews() {
+        $results.html('');
+        $heading.html('');
+        var $query = $search.val();
+        $.get(
+            'https://newsapi.org/v2/everything?q=' + $query + '&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            function (data) {
+                $.each(data.articles, function (i, article) {
+                    console.log(data);
+                    var output = getMainNewsView(article);
+                    $results.append(output);
+//                    $heading.append(article.totalResults);
+                });
+            }
+        );
+    }
+    //get output for the main view news
     function getMainNewsView(article) {
         var id = article.source.id;
         var author = article.author;
@@ -29,17 +61,6 @@
         var date = article.publishedAt;
 
         var output;
-//        output = '<li class="list-item">' +
-//            '<div class="list-left">' +
-//            '<a data-fancybox data-type="iframe" data-src="' + url + '">' +
-//            '<img src="' + thumbnail + '" title="' + description + '"></a>' +
-//            '</div>' +
-//            '<div class="list-right">' +
-//            '<h3><a data-fancybox data-type="iframe" data-src="' + url + '">' + title + '</a></h3>' +
-//            '<small class="channel-date">By <span class="cTitle">' + author + ' </span> on ' + date + '</small>' +
-//            '<p>' + description + '</p>' +
-//            '</div>' +
-//            '</li>';
         output = '<li class="list-item-news">' +
         '<section data-fancybox data-type="iframe" data-src="'+ url + '" style="position: absolute;cursor: pointer;"><h4>' + title + '</h4>' +
         '<p>'+ description + '</p></section>' +
@@ -51,8 +72,9 @@
         '';
         return output;
     }
-
+    //looad news on page load
     function loadNews() {
+        $results.html('');
         $.get(
             'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=2c8ae97c6dc547c18620257074aa7d60',
             function (data) {
@@ -64,6 +86,55 @@
                 });
             }
         );
+    }
+    //load sport articles on sport link clicked
+    function loadSport() {
+        $results.html('');
+        $.get(
+            'https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            function (data) {
+                $.each(data.articles, function (i, article) {
+                    console.log(data);
+                    var outPut = getMainNewsView(article);
+                    $results.append(outPut);
+                });
+            }
+        );
+    }
+    //using ajax to avoid reload page for sport articles
+    function loadSportAjax() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200){
+                $('#result-video').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', loadSport(), true);
+        xhttp.send();
+    }
+
+    function loadCulture() {
+        $results.html('');
+        $.get(
+            'https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            function (data) {
+                $.each(data.articles, function (i, article) {
+                    console.log(data);
+                    var outPut = getMainNewsView(article);
+                    $results.append(outPut);
+                });
+            }
+        );
+    }
+    function loadCultureAjax() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200){
+                $('#result-video').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', loadSport(), true);
+        xhttp.send();
     }
 </script>
 <%--<script type="text/javascript" src="js/bbc.js"></script>--%>

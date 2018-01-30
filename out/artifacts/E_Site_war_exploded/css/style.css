@@ -487,11 +487,8 @@ footer li a:hover{
 #news-div{
     position: fixed;
     z-index: 1;
-    /*background: #000000;*/
     left: 37%;
     top:11.4%;
-    /*width: 300px;*/
-    /*height: 60px;*/
     line-height: 30px;
     font-weight: bold;
     font-size: 18px;
@@ -510,11 +507,16 @@ footer li a:hover{
 }
 #list-news li:hover{
     background: #ffa6a0;
+    cursor: pointer;
+}
+#list-news a:active {
+    color: #ffa6a0;
 }
 /*design load data news for main page(home)*/
 .list-item-news{
     margin-top: 15px;
     margin-left: 1px;
+    /*margin-bottom: 10px;*/
     float: left;
     overflow: auto;
 }
@@ -548,4 +550,3 @@ footer li a:hover{
     margin-top: 0;
     float: right;
 }
-
