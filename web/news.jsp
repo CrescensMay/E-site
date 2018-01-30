@@ -9,16 +9,65 @@
 
     <title>News</title>
 </head>
-<body>
+<body onload="loadNews()">
 <jsp:include page="html/header.html"/>
 <jsp:include page="html/uploads.html"/>
 <jsp:include page="html/apps.html"/>
 <jsp:include page="html/newNav.html"/>
 <jsp:include page="html/nav.html"/>
 <jsp:include page="html/newsResults.html"/>
+<script>
+    $results = $('#result-video');
 
+    function getMainNewsView(article) {
+        var id = article.source.id;
+        var author = article.author;
+        var title = article.title;
+        var description = article.description;
+        var url = article.url;
+        var thumbnail = article.urlToImage;
+        var date = article.publishedAt;
+
+        var output;
+//        output = '<li class="list-item">' +
+//            '<div class="list-left">' +
+//            '<a data-fancybox data-type="iframe" data-src="' + url + '">' +
+//            '<img src="' + thumbnail + '" title="' + description + '"></a>' +
+//            '</div>' +
+//            '<div class="list-right">' +
+//            '<h3><a data-fancybox data-type="iframe" data-src="' + url + '">' + title + '</a></h3>' +
+//            '<small class="channel-date">By <span class="cTitle">' + author + ' </span> on ' + date + '</small>' +
+//            '<p>' + description + '</p>' +
+//            '</div>' +
+//            '</li>';
+        output = '<li class="list-item-news">' +
+        '<a data-fancybox data-type="iframe" data-src="'+ url + '"><section style="position: absolute;"><h4><a data-fancybox data-type="iframe" data-src="' + url + '">' + title + '</a></h4>' +
+        '<p>'+ description + '</p></section></a>' +
+//        '<section><small class="channel-date-news">*<span class="cTitle">' + author + ' </span>' + date + '</small></section>' +
+        '<a data-fancybox data-type="iframe" data-src="' + url + '">' +
+        '<img src="' + thumbnail + '" title="' + title + '\n\n' + description + '">' +
+        '</a>' +
+        '</li>' +
+        '';
+        return output;
+    }
+
+    function loadNews() {
+        $.get(
+            'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            function (data) {
+                $.each(data.articles, function (i, article) {
+                    console.log(data);
+
+                    var outPut = getMainNewsView(article);
+                    $results.append(outPut);
+                });
+            }
+        );
+    }
+</script>
+<%--<script type="text/javascript" src="js/bbc.js"></script>--%>
 <script type="text/javascript" src="js/jquery.js"></script>
 <%--<script type="text/javascript" src="js/videoSearch.js"></script>--%>
-<script type="text/javascript" src="js/bbc.js"></script>
 </body>
 </html>

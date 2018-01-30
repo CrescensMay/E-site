@@ -219,6 +219,9 @@ input[type="text"]:not(.input){
 #apps-links ul li.youkids a{
     background-image: url("/images/youkids2.jpg");
 }
+#apps-links ul li.bbc a{
+    background-image: url("/images/bbc.png");
+}
 /*footer designing and positioning*/
 footer li{
     float: left;
@@ -507,5 +510,39 @@ footer li a:hover{
 }
 #list-news li:hover{
     background: #ffa6a0;
+}
+/*design load data news for main page(home)*/
+.list-item-news{
+    margin-top: 15px;
+    margin-left: 1px;
+    float: left;
+    overflow: auto;
+}
+.list-item-news h4{
+    width: 310px;
+    margin-left: 2px;
+    position: relative;
+    height: 40px;
+}
+.list-item-news p{
+    width: 310px;
+    font-size: 14px;
+    margin-left: 2px;
+    position: relative;
+    height: 25px;
+}
+.list-item-news a{
+    color: #ffffff;
+}
+.list-item-news img{
+    width: 315px;
+    height: 180px;
+}
+.channel-date-news{
+    color: #f4fffc;
+    position: relative;
+    margin-left: 2px;
+    bottom: 100px;
+    margin-top: 0;
 }
 
