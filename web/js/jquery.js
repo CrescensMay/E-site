@@ -78,17 +78,17 @@ $uploadIcon.click(function () {
 
 //manipulate modal box
 //show box on click
-$detailBtn.click(function () {
-   $modal.show();
-});
+// $detailBtn.click(function () {
+//    $modal.show();
+// });
+//
+// //hide box when close btn clicked
+// $close.click(function () {
+//    $modal.hide();
+// });
 
-//hide box when close btn clicked
-$close.click(function () {
-   $modal.hide();
-});
-
-$(window).click(function (event) {
-    if ($(event.target).is($modal)){
-        $modal.hide();
-    }
-});
+// $(window).click(function (event) {
+//     if ($(event.target).is($modal)){
+//         $modal.hide();
+//     }
+// });

@@ -31,12 +31,12 @@
                     request.setAttribute("author", author);
                     request.setAttribute("date", published_date);
                     %>
-        <li class="book-item-main">
+        <li data-fancybox data-type="iframe" data-src="data:application/pdf;base64,${file}" class="book-item-main">
             <img src="data:image/png;base64,${cover}" alt="image_type_check">
             <p><small>Title: </small>${title}</p>
             <p><small>Author: </small>${author}</p>
-            <button class="detail-btn">Details</button><br>
-            <a href="data:application/pdf;base64,${file}" download="${title}"><button class="dowload-btn">Download</button></a>
+            <button class="detail-btn">Preview</button><br>
+            <%--<a href="data:application/pdf;base64,${file}" download="${title}"><button class="dowload-btn">Download</button></a>--%>
         </li>
             <%
                 }
