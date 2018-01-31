@@ -34,11 +34,11 @@
                     request.setAttribute("date", published_date);
         %>
         <li class="book-item-main">
-            <a class="listen-music" href="data:video/mp4;base64,${file}">
+            <a data-fancybox data-type="iframe" data-src="data:video/mp4;base64,${file}">
                 <img src="data:image/png;base64,${cover}">
                 <h4 style="margin-left: 10px;margin-top: 3px;">${title}</h4>
             </a>
-            <p style="margin-left: 10px;"><small>By ${actor}</small></p>
+            <p style="margin-left: 10px;"><small>By </small>${actor}</p>
             <a href="data:video/mp4;base64,${file}" download="${title}"><button class="dowload-btn">Download</button></a>
         </li>
         <%
