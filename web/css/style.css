@@ -487,7 +487,7 @@ footer li a:hover{
 #news-div{
     position: fixed;
     z-index: 1;
-    left: 37%;
+    left: 27%;
     top:11.4%;
     line-height: 30px;
     font-weight: bold;
@@ -497,7 +497,7 @@ footer li a:hover{
 #list-news li{
     float: left;
     display: block;
-    width: 90px;
+    width: 110px;
     margin: auto;
     border: 1px solid #ffffff;
     background: #000000;

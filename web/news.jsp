@@ -21,9 +21,6 @@
     var $search = $('#searchField');
     var $form = $('#search-form');
     var $heading = $('.video-heading p');
-//    $('#news').one('click',loadNews());
-//    $('#sport').one('click', loadSportAjax());
-//    $('#culture').one('click', loadCultureAjax());
     //check input
     $form.submit(function (e) {
         e.preventDefault();
@@ -75,6 +72,21 @@
         '';
         return output;
     }
+    //looad news on main page load
+    function loadMainNews() {
+        $results.html('');
+        $.get(
+            'https://newsapi.org/v2/top-headlines?country=us&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            function (data) {
+                $.each(data.articles, function (i, article) {
+                    console.log(data);
+
+                    var outPut = getMainNewsView(article);
+                    $results.append(outPut);
+                });
+            }
+        );
+    }
     //looad news on page load
     function loadNews() {
         $results.html('');
@@ -104,6 +116,35 @@
             }
         );
     }
+
+    //load financial
+    function loadFinance() {
+        $results.html('');
+        $.get(
+            'https://newsapi.org/v2/top-headlines?sources=financial-times&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            function (data) {
+                $.each(data.articles, function (i, article) {
+                    console.log(data);
+                    var outPut = getMainNewsView(article);
+                    $results.append(outPut);
+                });
+            }
+        );
+    }
+    //load geography
+    function loadGeography() {
+        $results.html('');
+        $.get(
+            'https://newsapi.org/v2/top-headlines?sources=national-geographic&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            function (data) {
+                $.each(data.articles, function (i, article) {
+                    console.log(data);
+                    var outPut = getMainNewsView(article);
+                    $results.append(outPut);
+                });
+            }
+        );
+    }
     //using ajax to avoid reload page for sport articles
     function loadSportAjax() {
         var xhttp = new XMLHttpRequest();
@@ -116,10 +157,10 @@
         xhttp.send();
     }
 
-    function loadCulture() {
+    function loadFuture() {
         $results.html('');
         $.get(
-            'https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=2c8ae97c6dc547c18620257074aa7d60',
+            'https://newsapi.org/v2/top-headlines?sources=next-big-future&apiKey=2c8ae97c6dc547c18620257074aa7d60',
             function (data) {
                 $.each(data.articles, function (i, article) {
                     console.log(data);
@@ -129,14 +170,36 @@
             }
         );
     }
-    function loadCultureAjax() {
+    function loadFutureAjax() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200){
                 $('#result-video').innerHTML = this.responseText;
             }
         };
-        xhttp.open('GET', loadSport(), true);
+        xhttp.open('GET', loadFuture(), true);
+        xhttp.send();
+    }
+    //load fiance ajax
+    function loadFinanceAjax() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if(this.readyState === 4 && this.status === 200){
+                $('#result-video').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', loadFinance(), true);
+        xhttp.send();
+    }
+    //load geography ajax
+    function loadGeographyAjax() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if(this.readyState === 4 && this.status === 200){
+                $('#result-video').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', loadGeography(), true);
         xhttp.send();
     }
 </script>

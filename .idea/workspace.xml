@@ -8,16 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aa0d337d-2fbf-4277-b531-c2e351418e01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/newNav.html" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/newNav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/js/jquery.js" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/js/jquery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/news.jsp" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/news.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/resultShows.jsp" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/resultShows.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/newNav.html" afterPath="$PROJECT_DIR$/web/html/newNav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.js" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/news.jsp" afterPath="$PROJECT_DIR$/web/news.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resultShows.jsp" afterPath="$PROJECT_DIR$/web/resultShows.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +47,7 @@
       <file leaf-file-name="videoSearch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="2280">
               <caret line="295" column="15" lean-forward="true" selection-start-line="295" selection-start-column="15" selection-end-line="295" selection-end-column="15" />
               <folding>
                 <marker date="1517086105000" expanded="true" signature="8490:8507" ph="..." />
@@ -75,21 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newNav.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newNav.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/html/newNav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="90">
+              <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="534" column="21" lean-forward="true" selection-start-line="534" selection-start-column="21" selection-end-line="534" selection-end-column="21" />
+            <state relative-caret-position="73">
+              <caret line="489" column="14" lean-forward="true" selection-start-line="489" selection-start-column="14" selection-end-line="489" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -108,11 +102,11 @@
       <file leaf-file-name="news.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/news.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="70" column="57" lean-forward="false" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+            <state relative-caret-position="182">
+              <caret line="187" column="26" lean-forward="false" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
               <folding>
-                <marker date="1517548986000" expanded="true" signature="2315:2350" ph="..." />
-                <marker date="1517548986000" expanded="true" signature="2397:2417" ph="..." />
+                <marker date="1517552049000" expanded="true" signature="2171:2206" ph="..." />
+                <marker date="1517552049000" expanded="true" signature="2253:2273" ph="..." />
               </folding>
             </state>
           </provider>
@@ -201,10 +195,10 @@
         <option value="$PROJECT_DIR$/web/resultEbook.jsp" />
         <option value="$PROJECT_DIR$/web/resultMovies.jsp" />
         <option value="$PROJECT_DIR$/web/resultShows.jsp" />
-        <option value="$PROJECT_DIR$/web/html/newNav.html" />
         <option value="$PROJECT_DIR$/web/js/jquery.js" />
         <option value="$PROJECT_DIR$/web/news.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/html/newNav.html" />
       </list>
     </option>
   </component>
@@ -578,12 +572,12 @@
       <workItem from="1517257902323" duration="723000" />
       <workItem from="1517258739333" duration="1145000" />
       <workItem from="1517264491606" duration="43491000" />
-      <workItem from="1517462199519" duration="8810000" />
+      <workItem from="1517462199519" duration="12417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="430931000" />
+    <option name="totallyTimeSpent" value="434538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="701" extended-state="6" />
@@ -604,8 +598,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1376" sideWeight="0.539801" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.074773416" sideWeight="0.460199" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13746223" sideWeight="0.5298507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13746223" sideWeight="0.47014925" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32326284" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24938272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -875,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/musics.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -993,22 +979,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/newNav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/videoSearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="2280">
           <caret line="295" column="15" lean-forward="true" selection-start-line="295" selection-start-column="15" selection-end-line="295" selection-end-column="15" />
           <folding>
             <marker date="1517086105000" expanded="true" signature="8490:8507" ph="..." />
             <marker date="1517086105000" expanded="true" signature="8629:8646" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,19 +1008,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/news.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="70" column="57" lean-forward="false" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+        <state relative-caret-position="182">
+          <caret line="187" column="26" lean-forward="false" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
           <folding>
-            <marker date="1517548986000" expanded="true" signature="2315:2350" ph="..." />
-            <marker date="1517548986000" expanded="true" signature="2397:2417" ph="..." />
+            <marker date="1517552049000" expanded="true" signature="2171:2206" ph="..." />
+            <marker date="1517552049000" expanded="true" signature="2253:2273" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="534" column="21" lean-forward="true" selection-start-line="534" selection-start-column="21" selection-end-line="534" selection-end-column="21" />
+        <state relative-caret-position="73">
+          <caret line="489" column="14" lean-forward="true" selection-start-line="489" selection-start-column="14" selection-end-line="489" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/newNav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
           <folding />
         </state>
       </provider>
