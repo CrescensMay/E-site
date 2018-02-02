@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0d337d-2fbf-4277-b531-c2e351418e01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/newNav.html" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/html/newNav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/news.jsp" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/news.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/news.jsp" afterPath="$PROJECT_DIR$/web/news.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/newNav.html" afterPath="$PROJECT_DIR$/web/html/newNav.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newNav.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newNav.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/html/newNav.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="93" lean-forward="true" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+              <caret line="4" column="122" lean-forward="true" selection-start-line="4" selection-start-column="122" selection-end-line="4" selection-end-column="122" />
               <folding />
             </state>
           </provider>
@@ -98,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/news.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
+            <state relative-caret-position="-532">
               <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <marker date="1517560547000" expanded="true" signature="2172:2207" ph="..." />
@@ -196,8 +193,8 @@
         <option value="$PROJECT_DIR$/web/resultShows.jsp" />
         <option value="$PROJECT_DIR$/web/js/jquery.js" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/web/html/newNav.html" />
         <option value="$PROJECT_DIR$/web/news.jsp" />
+        <option value="$PROJECT_DIR$/web/html/newNav.html" />
       </list>
     </option>
   </component>
@@ -571,12 +568,12 @@
       <workItem from="1517257902323" duration="723000" />
       <workItem from="1517258739333" duration="1145000" />
       <workItem from="1517264491606" duration="43491000" />
-      <workItem from="1517462199519" duration="19998000" />
+      <workItem from="1517462199519" duration="20783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442119000" />
+    <option name="totallyTimeSpent" value="442904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="701" extended-state="6" />
@@ -592,7 +589,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33663365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33663365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1013,22 +1010,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/newNav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="93" lean-forward="true" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/news.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
+        <state relative-caret-position="-532">
           <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <marker date="1517560547000" expanded="true" signature="2172:2207" ph="..." />
             <marker date="1517560547000" expanded="true" signature="2254:2274" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/newNav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="122" lean-forward="true" selection-start-line="4" selection-start-column="122" selection-end-line="4" selection-end-column="122" />
+          <folding />
         </state>
       </provider>
     </entry>

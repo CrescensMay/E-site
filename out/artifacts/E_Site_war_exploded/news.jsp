@@ -22,12 +22,6 @@
     var $search = $('#searchField');
     var $form = $('#search-form');
     var $heading = $('.video-heading p');
-//    var $news = $('#news');
-//    var $sport = $('#sport');
-//    var $finance = $('#financial');
-//    var $geo = $('#geography');
-//    var $future = $('#future');
-
     //check input
     $form.submit(function (e) {
         e.preventDefault();
