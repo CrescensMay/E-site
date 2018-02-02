@@ -16,11 +16,18 @@
 <jsp:include page="html/newNav.html"/>
 <jsp:include page="html/nav.html"/>
 <jsp:include page="html/newsResults.html"/>
+
 <script>
     var $results = $('#result-video');
     var $search = $('#searchField');
     var $form = $('#search-form');
     var $heading = $('.video-heading p');
+//    var $news = $('#news');
+//    var $sport = $('#sport');
+//    var $finance = $('#financial');
+//    var $geo = $('#geography');
+//    var $future = $('#future');
+
     //check input
     $form.submit(function (e) {
         e.preventDefault();
@@ -116,7 +123,17 @@
             }
         );
     }
-
+    //using ajax to avoid reload page for sport articles
+    function loadSportAjax() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200){
+                $('#result-video').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', loadSport(), true);
+        xhttp.send();
+    }
     //load financial
     function loadFinance() {
         $results.html('');
@@ -130,6 +147,17 @@
                 });
             }
         );
+    }
+    //load fiance ajax
+    function loadFinanceAjax() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if(this.readyState === 4 && this.status === 200){
+                $('#result-video').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', loadFinance(), true);
+        xhttp.send();
     }
     //load geography
     function loadGeography() {
@@ -145,18 +173,18 @@
             }
         );
     }
-    //using ajax to avoid reload page for sport articles
-    function loadSportAjax() {
+    //load geography ajax
+    function loadGeographyAjax() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200){
+            if(this.readyState === 4 && this.status === 200){
                 $('#result-video').innerHTML = this.responseText;
             }
         };
-        xhttp.open('GET', loadSport(), true);
+        xhttp.open('GET', loadGeography(), true);
         xhttp.send();
     }
-
+    //load future data
     function loadFuture() {
         $results.html('');
         $.get(
@@ -178,28 +206,6 @@
             }
         };
         xhttp.open('GET', loadFuture(), true);
-        xhttp.send();
-    }
-    //load fiance ajax
-    function loadFinanceAjax() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if(this.readyState === 4 && this.status === 200){
-                $('#result-video').innerHTML = this.responseText;
-            }
-        };
-        xhttp.open('GET', loadFinance(), true);
-        xhttp.send();
-    }
-    //load geography ajax
-    function loadGeographyAjax() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if(this.readyState === 4 && this.status === 200){
-                $('#result-video').innerHTML = this.responseText;
-            }
-        };
-        xhttp.open('GET', loadGeography(), true);
         xhttp.send();
     }
 </script>
