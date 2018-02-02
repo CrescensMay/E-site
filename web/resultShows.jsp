@@ -5,7 +5,7 @@
 <%@ page import="java.util.Base64" %>
 <%@ page import="java.sql.SQLException" %>
 <section id="video-container">
-    <h4 class="video-heading" style="margin-left: 10px;"><p>Result Shows</p></h4>
+    <h4 class="video-heading" style="margin-left: 10px;"><p></p></h4>
     <ul id="result-video">
         <%
             try {

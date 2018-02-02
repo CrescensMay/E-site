@@ -509,9 +509,9 @@ footer li a:hover{
     background: #ffa6a0;
     cursor: pointer;
 }
-#list-news a:active {
-    color: #ffa6a0;
-}
+/*#list-news li:active {*/
+    /*color: #ffa6a0;*/
+/*}*/
 /*design load data news for main page(home)*/
 .list-item-news{
     margin-top: 15px;
@@ -532,7 +532,7 @@ footer li a:hover{
     font-size: 14px;
     margin-left: 2px;
     position: relative;
-    height: 25px;
+    /*height: 25px;*/
 }
 .list-item-news a{
     color: #ffffff;
@@ -549,4 +549,9 @@ footer li a:hover{
     bottom: 100px;
     margin-top: 0;
     float: right;
+}
+/*make ling active on click function*/
+.selected{
+    background:#ffa6a0;
+    /*font-size: 26px;*/
 }

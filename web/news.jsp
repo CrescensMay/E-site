@@ -21,6 +21,9 @@
     var $search = $('#searchField');
     var $form = $('#search-form');
     var $heading = $('.video-heading p');
+//    $('#news').one('click',loadNews());
+//    $('#sport').one('click', loadSportAjax());
+//    $('#culture').one('click', loadCultureAjax());
     //check input
     $form.submit(function (e) {
         e.preventDefault();
@@ -61,9 +64,9 @@
         var date = article.publishedAt;
 
         var output;
-        output = '<li class="list-item-news">' +
-        '<section data-fancybox data-type="iframe" data-src="'+ url + '" style="position: absolute;cursor: pointer;"><h4>' + title + '</h4>' +
-        '<p>'+ description + '</p></section>' +
+        output = '<li class="list-item-news" data-fancybox data-type="iframe" data-src="'+ url + '">' +
+        '<section style="position: absolute;cursor: pointer;"><h4>' + title + '</h4>' +
+        '<p style="background: #1a2431;">'+ description + '</p></section>' +
 //        '<section><small class="channel-date-news">*<span class="cTitle">' + author + ' </span>' + date + '</small></section>' +
         '<a data-fancybox data-type="iframe" data-src="' + url + '">' +
         '<img src="' + thumbnail + '" title="' + title + '\n\n' + description + '">' +

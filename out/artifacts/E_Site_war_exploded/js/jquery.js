@@ -11,7 +11,7 @@ var $close = $('.close');
 var $modal = $('#myModal');
 var $detailBtn = $('.detail-btn');
 var $detailsBox = $('#details');
-
+// var $news = $('#list-news');
 //hiding all children except the child link
 $('#upload-children').hide();
 
@@ -76,19 +76,8 @@ $uploadIcon.click(function () {
     $uploadLink.toggle();
 });
 
-//manipulate modal box
-//show box on click
-// $detailBtn.click(function () {
-//    $modal.show();
-// });
-//
-// //hide box when close btn clicked
-// $close.click(function () {
-//    $modal.hide();
-// });
-
-// $(window).click(function (event) {
-//     if ($(event.target).is($modal)){
-//         $modal.hide();
-//     }
-// });
+//make news menu active on click
+$('#list-news').find('a').click(function () {
+    $('.selected').removeClass('selected');
+    $(this).addClass('selected');
+});
