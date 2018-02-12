@@ -34,7 +34,7 @@
                     request.setAttribute("date", published_date);
         %>
         <li class="book-item-main">
-            <a data-fancybox data-type="iframe" data-src="data:video/mp4;base64,${file}">
+            <a data-fancybox data-type="iframe" data-src="data:video/mp4;base64,${file}" style="cursor: pointer;">
                 <img src="data:image/png;base64,${cover}">
                 <h4 style="margin-left: 10px;margin-top: 3px;">${title}</h4>
             </a>

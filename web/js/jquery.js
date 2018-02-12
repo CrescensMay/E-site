@@ -11,6 +11,7 @@ var $close = $('.close');
 var $modal = $('#myModal');
 var $detailBtn = $('.detail-btn');
 var $detailsBox = $('#details');
+var $forum = $('#forum-form');
 // var $news = $('#list-news');
 //hiding all children except the child link
 $('#upload-children').hide();
@@ -59,6 +60,8 @@ $('#menu-icon').click(function () {
     $section.toggleClass('toggleContainer');
     //marge left upload box when menu opened
     $upload.toggleClass('toggleUploadBox');
+    //marge left forum form
+    // $forum.toggleClass('marginFormOnToggle');
 });
 
 //toggle apps menu on click

@@ -162,6 +162,9 @@ input[type="text"]:not(.input){
 .menu-links li.news a{
     background-image: url("/images/news.png");
 }
+.menu-links li.forum a{
+    background-image: url("/images/forum2.png");
+}
 /*uploads links design*/
 #uploads-links{
     position: fixed;
@@ -553,5 +556,10 @@ footer li a:hover{
 /*make ling active on click function*/
 .selected{
     background:#ffa6a0;
-    /*font-size: 26px;*/
+}
+/*design forum form*/
+#forum-form{
+    position: relative;
+    left: 35%;
+    top: 20%;
 }
