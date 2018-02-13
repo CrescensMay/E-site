@@ -562,4 +562,9 @@ footer li a:hover{
     position: relative;
     left: 35%;
     top: 20%;
+    line-height: 35px;
+}
+#result-post{
+    position: relative;
+    left: 32%;
 }

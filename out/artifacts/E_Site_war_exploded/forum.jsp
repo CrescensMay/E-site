@@ -14,7 +14,7 @@
 <jsp:include page="html/uploads.html"/>
 <jsp:include page="html/apps.html"/>
 <jsp:include page="html/nav.html"/>
-<jsp:include page="html/forum.html"/>
+<jsp:include page="forumPost.jsp"/>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 </body>

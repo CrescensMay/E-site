@@ -10,146 +10,162 @@
     <schema id="4" parent="1" name="mysql"/>
     <schema id="5" parent="1" name="performance_schema"/>
     <schema id="6" parent="1" name="sys"/>
-    <table id="7" parent="2" name="book_table"/>
-    <table id="8" parent="2" name="movie_table"/>
-    <table id="9" parent="2" name="music_table"/>
-    <table id="10" parent="2" name="tvshow_table"/>
-    <column id="11" parent="7" name="id">
+    <schema id="7" parent="1" name="BookShop">
+      <Current>1</Current>
+    </schema>
+    <table id="8" parent="2" name="book_table"/>
+    <table id="9" parent="2" name="forum_table"/>
+    <table id="10" parent="2" name="movie_table"/>
+    <table id="11" parent="2" name="music_table"/>
+    <table id="12" parent="2" name="tvshow_table"/>
+    <column id="13" parent="8" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="12" parent="7" name="title">
+    <column id="14" parent="8" name="title">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="13" parent="7" name="author">
+    <column id="15" parent="8" name="author">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="14" parent="7" name="published_date">
+    <column id="16" parent="8" name="published_date">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="15" parent="7" name="publisher">
+    <column id="17" parent="8" name="publisher">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="16" parent="7" name="cover">
+    <column id="18" parent="8" name="cover">
       <Position>6</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <column id="17" parent="7" name="file">
+    <column id="19" parent="8" name="file">
       <Position>7</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <key id="18" parent="7" name="PRIMARY">
+    <key id="20" parent="8" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="19" parent="8" name="id">
+    <column id="21" parent="9" name="comment">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="9" name="date">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="23" parent="9" name="file">
+      <Position>3</Position>
+      <DataType>longblob|0</DataType>
+    </column>
+    <column id="24" parent="10" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="20" parent="8" name="title">
+    <column id="25" parent="10" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="21" parent="8" name="actor">
+    <column id="26" parent="10" name="actor">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="22" parent="8" name="released_date">
+    <column id="27" parent="10" name="released_date">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="23" parent="8" name="director">
+    <column id="28" parent="10" name="director">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="24" parent="8" name="cover">
+    <column id="29" parent="10" name="cover">
       <Position>6</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <column id="25" parent="8" name="file">
+    <column id="30" parent="10" name="file">
       <Position>7</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <key id="26" parent="8" name="PRIMARY">
+    <key id="31" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="27" parent="9" name="id">
+    <column id="32" parent="11" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="28" parent="9" name="title">
+    <column id="33" parent="11" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="29" parent="9" name="artist">
+    <column id="34" parent="11" name="artist">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="30" parent="9" name="released_date">
+    <column id="35" parent="11" name="released_date">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="31" parent="9" name="producer">
+    <column id="36" parent="11" name="producer">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="32" parent="9" name="cover">
+    <column id="37" parent="11" name="cover">
       <Position>6</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <column id="33" parent="9" name="file">
+    <column id="38" parent="11" name="file">
       <Position>7</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <key id="34" parent="9" name="PRIMARY">
+    <key id="39" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="35" parent="10" name="id">
+    <column id="40" parent="12" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="36" parent="10" name="title">
+    <column id="41" parent="12" name="title">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="37" parent="10" name="host">
+    <column id="42" parent="12" name="host">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="38" parent="10" name="released_date">
+    <column id="43" parent="12" name="released_date">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="39" parent="10" name="director">
+    <column id="44" parent="12" name="director">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="40" parent="10" name="cover">
+    <column id="45" parent="12" name="cover">
       <Position>6</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <column id="41" parent="10" name="file">
+    <column id="46" parent="12" name="file">
       <Position>7</Position>
       <DataType>longblob|0</DataType>
     </column>
-    <key id="42" parent="10" name="PRIMARY">
+    <key id="47" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

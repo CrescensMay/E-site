@@ -36,4 +36,12 @@
         <servlet-name>showUpload</servlet-name>
         <url-pattern>/ShowFileUpload</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>postUpload</servlet-name>
+        <servlet-class>servlet.postUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>postUpload</servlet-name>
+        <url-pattern>/postCommentUpload</url-pattern>
+    </servlet-mapping>
 </web-app>
