@@ -12,9 +12,9 @@ public class ForumDao {
     public static int savePost(Forum forum){
         int status = 0;
         Connection connection;
-        String sql = "INSERT INTO forum_table(comment, date, file) VALUES(?, ?, ?)";
-        connection = ConnectionDao.getConnection();
         try {
+            String sql = "INSERT INTO forum_table(comment, date, file) VALUES(?, ?, ?)";
+            connection = ConnectionDao.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, forum.getComment());
             preparedStatement.setString(2, forum.getDate());

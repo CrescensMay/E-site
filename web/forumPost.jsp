@@ -48,6 +48,8 @@
             <button class="dowload-btn">Download</button>
         </li>
         <%
+                preparedStatement.close();
+                connection.close();
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
