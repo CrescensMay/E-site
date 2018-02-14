@@ -243,7 +243,6 @@ footer li a:hover{
     padding: 10px 10px 10px 10px;
     background: #b6e6b7;
     color: #ffffff;
-    overflow-x: hidden;
     /*margin: auto;*/
     /*width: 75%;*/
 }
@@ -560,16 +559,18 @@ footer li a:hover{
 }
 /*design forum form*/
 #forum-form{
-    position: relative;
-    left: 35%;
+    margin-left: 34%;
     top: 20%;
     line-height: 35px;
 }
+/*design result post area*/
 #result-post{
-    position: relative;
-    left: 32%;
+    /*overflow-x: hidden;*/
 }
 /*design post ul children*/
 .post-item-main ul li {
     float: left;
+}
+.post-item-main{
+    margin-left: 32%;
 }

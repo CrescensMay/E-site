@@ -14,7 +14,7 @@
         <input type="file" name="post-file">
         <input type="submit" value="Post">
     </form>
-    <hr>
+    <%--<hr>--%>
     <br>
     <%--<span id="local"></span>--%>
     <%--<h4 class="video-heading" style="margin-left: 10px;"><p></p></h4>--%>

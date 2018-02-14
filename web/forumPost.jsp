@@ -14,7 +14,7 @@
         <input type="file" name="post-file">
         <input type="submit" value="Post">
     </form>
-    <hr>
+    <%--<hr>--%>
     <br>
     <%--<span id="local"></span>--%>
     <%--<h4 class="video-heading" style="margin-left: 10px;"><p></p></h4>--%>
@@ -50,7 +50,6 @@
                 <a data-fancybox data-type="iframe" data-src="data:image/png;base64,${file}"><img src="data:image/png;base64,${file}" height="250" width="350"></a>
                 <h5>${time}</h5>
             </div>
-            <%--<button class="dowload-btn">Download</button>--%>
         </li>
         <%
                 }
