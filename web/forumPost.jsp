@@ -14,8 +14,10 @@
         <input type="file" name="post-file">
         <input type="submit" value="Post">
     </form>
-    <span id="local"></span>
-    <h4 class="video-heading" style="margin-left: 10px;"><p></p></h4>
+    <hr>
+    <br>
+    <%--<span id="local"></span>--%>
+    <%--<h4 class="video-heading" style="margin-left: 10px;"><p></p></h4>--%>
     <ul id="result-post">
         <%
             byte[] fileData;
@@ -39,18 +41,21 @@
 
         %>
         <li class="post-item-main">
-            <img src="" alt="user_profile" height="30" width="30"><p style="margin-left: 10px;">New Guy</p>
-            <div>
-                <h4 style="margin-left: 10px;margin-top: 3px;">${post}</h4>
-                <img src="data:image/png;base64,${file}">
+            <ul>
+                <li style="margin: 0;"><img src="" alt="user_profile" height="50" width="50"></li>
+                <li><p style="margin-left: 10px;">New Guy</p></li>
+            </ul>
+            <div style="clear: both;">
+                <h4 style="margin-left: 10px;margin-top: 3px;width: 350px;">${post}</h4>
+                <a data-fancybox data-type="iframe" data-src="data:image/png;base64,${file}"><img src="data:image/png;base64,${file}" height="250" width="350"></a>
                 <h5>${time}</h5>
             </div>
-            <button class="dowload-btn">Download</button>
+            <%--<button class="dowload-btn">Download</button>--%>
         </li>
         <%
+                }
                 preparedStatement.close();
                 connection.close();
-                }
             } catch (SQLException e) {
                 e.printStackTrace();
             }

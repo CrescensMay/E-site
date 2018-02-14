@@ -243,6 +243,7 @@ footer li a:hover{
     padding: 10px 10px 10px 10px;
     background: #b6e6b7;
     color: #ffffff;
+    overflow-x: hidden;
     /*margin: auto;*/
     /*width: 75%;*/
 }
@@ -567,4 +568,8 @@ footer li a:hover{
 #result-post{
     position: relative;
     left: 32%;
+}
+/*design post ul children*/
+.post-item-main ul li {
+    float: left;
 }

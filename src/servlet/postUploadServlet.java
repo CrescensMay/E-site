@@ -48,7 +48,7 @@ public class postUploadServlet extends HttpServlet {
             request.getRequestDispatcher("forum.jsp").include(request, response);
         }else {
             System.out.println("Couldn't upload the file");
-            response.sendRedirect("forum.jsp");
+            request.getRequestDispatcher("forum.jsp");
         }
     }
 
