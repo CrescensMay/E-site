@@ -12,6 +12,7 @@ var $modal = $('#myModal');
 var $detailBtn = $('.detail-btn');
 var $detailsBox = $('#details');
 var $forum = $('#forum-form');
+var $textarea = $('#user-comment');
 // var $news = $('#list-news');
 //hiding all children except the child link
 $('#upload-children').hide();
@@ -84,3 +85,8 @@ $('#list-news').find('a').click(function () {
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
 });
+
+//make textarea auto resizable
+// $textarea.on('onkeydown', function () {
+//     $(this).style.cssText = 'height:' + $(this).scrollHeight + 'px';
+// });

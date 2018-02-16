@@ -573,4 +573,16 @@ footer li a:hover{
 }
 .post-item-main{
     margin-left: 32%;
+    margin-top: 5%;
 }
+/*design user comment input*/
+/*#user-comment{*/
+    /*display: block;*/
+    /*border: 1px solid #ffa6a0;*/
+    /*width: 350px;*/
+    /*padding: 10px;*/
+    /*font-size: 14px;*/
+    /*overflow: hidden;*/
+    /*!*resize: none;*!*/
+    /*!*border-radius: 40px;*!*/
+/*}*/

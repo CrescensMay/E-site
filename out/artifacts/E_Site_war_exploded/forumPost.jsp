@@ -10,7 +10,7 @@
 <section id="video-container">
     <form name="comment-form" id="forum-form" action="postCommentUpload" method="post" enctype="multipart/form-data">
         <label for="text-area">Express yourself</label><br>
-        <textarea id="text-area"  name="comment" style="width: 350px;height: 100px;" placeholder="Enter comment here" required></textarea><br>
+        <textarea id="text-area"  name="comment" style="width: 350px;height: 100px;resize: none" placeholder="Enter comment here" required></textarea><br>
         <input type="file" name="post-file">
         <input type="submit" value="Post">
     </form>
@@ -45,12 +45,22 @@
                 <li style="margin: 0;"><img src="" alt="user_profile" height="50" width="50"></li>
                 <li><p style="margin-left: 10px;">New Guy</p></li>
             </ul>
-            <div style="clear: both;">
-                <h4 style="margin-left: 10px;margin-top: 3px;width: 350px;">${post}</h4>
-                <a data-fancybox data-type="iframe" data-src="data:image/png;base64,${file}"><img src="data:image/png;base64,${file}" height="250" width="350"></a>
+            <div style="clear: both;width: 350px;">
                 <h5>${time}</h5>
+                <h4 style="margin-left: 10px;margin-top: 20px;width: 350px;">${post}</h4>
+                <a data-fancybox data-type="iframe" data-src="data:image/png;base64,${file}"><img src="data:image/png;base64,${file}" height="250" width="350"></a>
+                <form class="reply-comment">
+                    <textarea id="user-comment" name="user-comment"
+                              style="resize: none;
+                              /*overflow: hidden;*/
+                              border: 1px solid #ffa6a0;
+                              margin-top: 10px;
+                              width: 350px;
+                              font-size: 14px;"
+                              placeholder="Enter your comment" required></textarea>
+                        <input type="button" id="reply-comment" name="user-comment" value="Reply" required>
+                </form>
             </div>
-            <%--<button class="dowload-btn">Download</button>--%>
         </li>
         <%
                 }
