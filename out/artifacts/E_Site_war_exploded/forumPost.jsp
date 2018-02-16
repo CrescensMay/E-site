@@ -49,8 +49,8 @@
                 <h5>${time}</h5>
                 <h4 style="margin-left: 10px;margin-top: 20px;width: 350px;">${post}</h4>
                 <a data-fancybox data-type="iframe" data-src="data:image/png;base64,${file}"><img src="data:image/png;base64,${file}" height="250" width="350"></a>
-                <form class="reply-comment">
-                    <textarea id="user-comment" name="user-comment"
+                <form class="reply-comment" name="commentForm">
+                    <textarea id="user-comment" name="userComment"
                               style="resize: none;
                               /*overflow: hidden;*/
                               border: 1px solid #ffa6a0;
@@ -58,8 +58,9 @@
                               width: 350px;
                               font-size: 14px;"
                               placeholder="Enter your comment" required></textarea>
-                        <input type="button" id="reply-comment" name="user-comment" value="Reply" required>
+                        <input type="button" id="reply-comment" name="reply-comment" value="Reply" onclick="postComment()">
                 </form>
+                <span id="commentLocation"></span>
             </div>
         </li>
         <%

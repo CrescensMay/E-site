@@ -90,3 +90,18 @@ $('#list-news').find('a').click(function () {
 // $textarea.on('onkeydown', function () {
 //     $(this).style.cssText = 'height:' + $(this).scrollHeight + 'px';
 // });
+
+function postComment() {
+    var request;
+    var comment = document.commentForm.userComment.value;
+    var url = "forum.jsp?userComment=" + comment;
+
+    request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === 4){
+            $('#commentLocation').innerHTML = request.responseText;
+        }
+    };
+    request.open('GET', url, true);
+    request.send();
+}
