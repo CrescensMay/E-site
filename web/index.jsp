@@ -21,8 +21,7 @@
   <jsp:include page="html/uploads.html"/>
   <jsp:include page="html/apps.html"/>
   <jsp:include page="html/nav.html"/>
-  <jsp:include page="html/mainResults.html"/>
-
+  <jsp:include page="html/mainResults.html"/>å
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/videoSearch.js"></script>
   </body>

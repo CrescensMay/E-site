@@ -12,7 +12,7 @@
 
     #contact input[type="text"],
     #contact input[type="email"],
-    #contact input[type="tel"],
+    /*#contact input[type="tel"],*/
     #contact textarea,
     #contact button[type="submit"] {
         font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
@@ -21,7 +21,9 @@
     #contact {
         position: absolute;
         left: 32%;
+        margin-top: 1%;
         width: 400px;
+        height: 480px;
         background: #f7f6ff;/*#F9F9F9*/;
         padding: 25px;
         border-radius: 5px;
@@ -56,8 +58,8 @@
 
     #contact input[type="text"],
     #contact input[type="email"],
-    #contact input[type="tel"],
-    #contact input[type="url"],
+    /*#contact input[type="tel"],*/
+    /*#contact input[type="url"],*/
     #contact textarea {
         width: 100%;
         border: 1px solid #ccc;
@@ -68,7 +70,7 @@
 
     #contact input[type="text"]:hover,
     #contact input[type="email"]:hover,
-    #contact input[type="tel"]:hover,
+    /*#contact input[type="tel"]:hover,*/
     /*#contact input[type="url"]:hover,*/
     #contact textarea:hover {
         -webkit-transition: border-color 0.3s ease-in-out;
@@ -93,7 +95,22 @@
         padding: 10px;
         font-size: 15px;
     }
-
+    #contact button[type="reset"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #ff7770;
+        color: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    #contact button[type="reset"]:hover {
+        background: #ffa6a0;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
     #contact button[type="submit"]:hover {
         background: #b6e6b7;
         -webkit-transition: background 0.3s ease-in-out;
@@ -132,23 +149,29 @@
     }
 </style>
 <section id="video-container">
-    <form id="contact" action="" method="post">
+    <form id="contact" action="mailDispatcher" method="post">
         <h3>Contact Form</h3>
         <h4>Contact us FAQ</h4>
         <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
         </fieldset>
         <fieldset>
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
+        </fieldset>
+        <!--<fieldset>-->
+            <!--<input placeholder="Your Phone Number (optional)" name="tel" type="tel" tabindex="3" required>-->
+        <!--</fieldset>-->
+        <fieldset>
+            <input placeholder="Subject" type="text" name="subject" tabindex="4" required>
         </fieldset>
         <fieldset>
-            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+            <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
-            <input placeholder="Subject" type="text" tabindex="4" required>
+            <input name="hidden" type="hidden" id="email-sent" value="<%request.getAttribute("result");%>">
         </fieldset>
         <fieldset>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            <button name="clear" type="reset" id="contact-clear">Clear</button>
         </fieldset>
         <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>

@@ -44,4 +44,12 @@
         <servlet-name>postUpload</servlet-name>
         <url-pattern>/postCommentUpload</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>sendEmail</servlet-name>
+        <servlet-class>servlet.SendEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendEmail</servlet-name>
+        <url-pattern>/mailDispatcher</url-pattern>
+    </servlet-mapping>
 </web-app>

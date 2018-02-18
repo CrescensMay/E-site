@@ -105,3 +105,10 @@ function postComment() {
     request.open('GET', url, true);
     request.send();
 }
+
+//check if result for email is equal to 1
+function displayResult() {
+    if ($('#email-sent').val() === 1){
+        alert("Mail sent");
+    }
+}
