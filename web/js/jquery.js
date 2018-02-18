@@ -108,7 +108,7 @@ function postComment() {
 
 //check if result for email is equal to 1
 function displayResult() {
-    if ($('#email-sent').val() === 1){
+    if ($('#email-sent').val().is(1)){
         alert("Mail sent");
     }
 }

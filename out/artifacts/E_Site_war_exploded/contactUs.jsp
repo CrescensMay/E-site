@@ -220,11 +220,6 @@
                     "    </div>";
             message += "</body>";
             message += "</html>";
-//            message = "<h1>From MySite</h1><br>" +
-//                    "<h3>From: " + request.getParameter("name") + "</h3><br>" +
-//                    "<p>Email: " + request.getParameter("email") + "</p>" +
-//                    request.getParameter("message") +
-//                    "<br><h3>Enjoy your day</h2>";
         }
         //Create properties object
         Properties properties = new Properties();
@@ -252,7 +247,7 @@
     }
 %>
 <section id="video-container">
-    <form id="contact" action="contactUs.jsp" method="post">
+    <form id="contact" action="mailDispatcher" method="post">
         <h3>Contact Form</h3>
         <h4>Contact us FAQ</h4>
         <fieldset>
@@ -271,7 +266,7 @@
             <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
-            <input name="hidden" type="hidden" id="email-sent" value="<%=result%>">
+            <input name="hidden" type="hidden" id="email-sent" value="<%request.getAttribute("result");%>">
         </fieldset>
         <fieldset>
             <button name="clear" type="reset" id="contact-clear">Clear</button>

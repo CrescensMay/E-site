@@ -1,12 +1,3 @@
-<%@ page import="java.util.Properties" %>
-<%@ page import="bean.SMTAuthenticator" %>
-<%@ page import="javax.mail.Session" %>
-<%@ page import="javax.mail.internet.MimeMessage" %>
-<%@ page import="javax.mail.internet.InternetAddress" %>
-<%@ page import="javax.mail.Message" %>
-<%@ page import="javax.mail.Transport" %>
-<%@ page import="javax.mail.MessagingException" %>
-<%@ page import="java.util.Calendar" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -173,81 +164,8 @@
 <jsp:include page="html/uploads.html"/>
 <jsp:include page="html/apps.html"/>
 <jsp:include page="html/nav.html"/>
-<%
-    //get values from form
-    int result = 0;
-    Calendar calendar = Calendar.getInstance();
-    int year = calendar.get(Calendar.YEAR);
-
-    if (request.getParameter("submit") != null){
-        //properties to be read from external file or database
-        String username = "programmingtest90@gmail.com";
-        String password = "@programmingtest90";
-        String host = "smtp.gmail.com";
-        int port = 465;
-
-        String from = "programmingtest90@gmail.com" ;
-        String to = "programmingtest90@gmail.com";
-        String subject = null;
-        String message = null;
-
-        if (request.getParameter("subject") != null){
-            subject = request.getParameter("subject");
-        }
-        if (request.getParameter("message") != null && request.getParameter("name") != null && request.getParameter("email") != null){
-            message = "<html>";
-            message += "<body>";
-            message += "<div class=\"contact-message\" style=\"width: 450px;margin-left:25%;\n" +
-                    "  background-color: #f7f6ff;\">\n" +
-                    "      <h2 style=\"text-align: center;\n" +
-                    "  background-color: #b6e6b7;\n" +
-                    "  height: 50px;\n" +
-                    "  padding-top: 20px;\">Mysite</h2>\n" +
-                    "      <h4 style=\"padding: 10px;\"><b>Name:</b> " + request.getParameter("name") + "</h4>\n" +
-                    "      <hr>\n" +
-                    "      <h4 style=\"padding: 10px;\"><b>From:</b> " + request.getParameter("email") + "</h4>\n" +
-                    "      <hr>\n" +
-                    "      <h4 style=\"padding: 10px;\"><b>Subject:</b> " + request.getParameter("subject") + "</h4>\n" +
-                    "      <hr>\n" +
-                    "      <h3 style=\"padding: 10px;\"><b>Message:</b></h3>\n" +
-                    "      <p style=\"padding: 10px;\n" +
-                    "  line-height: 25px;\n" +
-                    "  height: 150px;\n" +
-                    "  overflow-y: scroll;\n" +
-                    "  margin-bottom: 30px;\n" +
-                    "  background-color: #b6e6b7\">" + request.getParameter("message") + "</p>\n" +
-                    "        <footer><p style=\"text-align:center;background-color: #b6e6b7;padding:10px;\">&copy; " + year + " MySite by <b>Crescens.K</b></p></footer>\n" +
-                    "    </div>";
-            message += "</body>";
-            message += "</html>";
-        }
-        //Create properties object
-        Properties properties = new Properties();
-        //create SMTPAuth
-        SMTAuthenticator authenticator = new SMTAuthenticator();
-        //create mail session object
-        Session instance = Session.getInstance(properties, authenticator);
-        //Create MIME style email object(extend format of email like  html email)
-        MimeMessage mimeMessage = new MimeMessage(instance);
-        try {
-            mimeMessage.setContent(message, "text/html");
-            mimeMessage.setSubject(subject);
-            mimeMessage.setFrom(new InternetAddress(from));
-            mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            //connect to smtp server
-            Transport transport = instance.getTransport("smtps");
-            transport.connect(host, port, username, password);
-            transport.sendMessage(mimeMessage, mimeMessage.getAllRecipients());
-            transport.close();
-
-            result = 1;
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        }
-    }
-%>
 <section id="video-container">
-    <form id="contact" action="contactUs.jsp" method="post">
+    <form id="contact" action="mailDispatcher" method="post">
         <h3>Contact Form</h3>
         <h4>Contact us FAQ</h4>
         <fieldset>
@@ -266,7 +184,7 @@
             <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
-            <input name="hidden" type="hidden" id="email-sent" value="<%=result%>">
+            <input name="hidden" type="hidden" id="email-sent" value="<%request.getAttribute("result");%>">
         </fieldset>
         <fieldset>
             <button name="clear" type="reset" id="contact-clear">Clear</button>
