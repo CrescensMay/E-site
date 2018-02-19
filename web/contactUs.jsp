@@ -159,16 +159,16 @@
             color: #888;
         }
         .error{
-            /*width: 100%;*/
-            /*position: fixed;*/
+            position: fixed;
+            width: 380px;
             background: #ffa6a0;
             padding: 10px;
             text-align: center;
             z-index: 1;
         }
         .success{
-            /*position: fixed;*/
-            /*width: 100%;*/
+            position: fixed;
+            width: 380px;
             background: #48e0a4;
             padding: 10px;
             text-align: center;

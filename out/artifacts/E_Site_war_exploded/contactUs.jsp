@@ -159,16 +159,16 @@
             color: #888;
         }
         .error{
-            /*width: 100%;*/
-            /*position: fixed;*/
+            position: fixed;
+            width: 380px;
             background: #ffa6a0;
             padding: 10px;
             text-align: center;
             z-index: 1;
         }
         .success{
-            /*position: fixed;*/
-            /*width: 100%;*/
+            position: fixed;
+            width: 380px;
             background: #48e0a4;
             padding: 10px;
             text-align: center;
@@ -223,9 +223,14 @@
     //MAKE sent status div slide down and then up
     function slide() {
         setTimeout(function () {
+            $('.error').fadeIn('slow');
+            $('.success').fadeIn('slow');
+        },2000);
+
+        setTimeout(function () {
             $('.error').fadeOut('slow');
             $('.success').fadeOut('slow');
-        },2000);
+        },5000);
     }
 </script>
 

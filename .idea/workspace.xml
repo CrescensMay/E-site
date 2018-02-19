@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0d337d-2fbf-4277-b531-c2e351418e01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/classes/servlet/SendEmailServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/WEB-INF/classes/servlet/SendEmailServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/E-Site/servlet/SendEmailServlet.class" afterPath="$PROJECT_DIR$/out/production/E-Site/servlet/SendEmailServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/contactUs.jsp" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/contactUs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/js/jquery.js" afterPath="$PROJECT_DIR$/out/artifacts/E_Site_war_exploded/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bean/SMTAuthenticator.java" afterPath="$PROJECT_DIR$/src/bean/SMTAuthenticator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/SendEmailServlet.java" afterPath="$PROJECT_DIR$/src/servlet/SendEmailServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/contactUs.jsp" afterPath="$PROJECT_DIR$/web/contactUs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.js" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,8 +77,8 @@
       <file leaf-file-name="contactUs.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/contactUs.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="227" column="16" lean-forward="true" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="16" />
+            <state relative-caret-position="214">
+              <caret line="223" column="22" lean-forward="false" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -601,12 +591,12 @@
       <workItem from="1517730113367" duration="904000" />
       <workItem from="1518440753087" duration="1026000" />
       <workItem from="1518617763082" duration="70552000" />
-      <workItem from="1519025111843" duration="10921000" />
+      <workItem from="1519025111843" duration="12693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="564019000" />
+    <option name="totallyTimeSpent" value="565791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="701" extended-state="6" />
@@ -1046,8 +1036,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/contactUs.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="227" column="16" lean-forward="true" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="16" />
+        <state relative-caret-position="214">
+          <caret line="223" column="22" lean-forward="false" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
           <folding />
         </state>
       </provider>
