@@ -24,7 +24,8 @@ public class SendEmailServlet extends HttpServlet {
 
         response.setContentType("text/html;charset=UTF-8");
         //get values from form
-        int result = 0;
+        String status = null;
+        String success = null;
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
 
@@ -90,10 +91,18 @@ public class SendEmailServlet extends HttpServlet {
                 transport.sendMessage(mimeMessage, mimeMessage.getAllRecipients());
                 transport.close();
 
-                result = 1;
-                request.setAttribute("result", result);
+                status = "success";
+                success = "Email Successfully Sent!";
+
+                request.setAttribute("status", status);
+                request.setAttribute("success", success);
             } catch (javax.mail.MessagingException e) {
                 e.printStackTrace();
+                status = "error";
+                success = "Error Connection, Email not Sent! ";
+
+                request.setAttribute("status", status);
+                request.setAttribute("success", success);
             }
             request.getRequestDispatcher("contactUs.jsp").include(request, response);
         }

@@ -61,6 +61,8 @@ $('#menu-icon').click(function () {
     $section.toggleClass('toggleContainer');
     //marge left upload box when menu opened
     $upload.toggleClass('toggleUploadBox');
+    //align text
+    // $('.status').toggleClass('successfullySent');
     //marge left forum form
     // $forum.toggleClass('marginFormOnToggle');
 });
@@ -106,9 +108,4 @@ function postComment() {
     request.send();
 }
 
-//check if result for email is equal to 1
-function displayResult() {
-    if ($('#email-sent').val().is(1)){
-        alert("Mail sent");
-    }
-}
+

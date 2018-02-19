@@ -575,6 +575,10 @@ footer li a:hover{
     margin-left: 32%;
     margin-top: 5%;
 }
+/*margin text for sent successfully*/
+.successfullySent{
+    text-align: left;
+}
 /*design user comment input*/
 /*#user-comment{*/
     /*display: block;*/

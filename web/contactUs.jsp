@@ -1,3 +1,4 @@
+<%@ page import="java.util.Objects" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -157,26 +158,49 @@
         :-ms-input-placeholder {
             color: #888;
         }
+        .error{
+            /*width: 100%;*/
+            /*position: fixed;*/
+            background: #ffa6a0;
+            padding: 10px;
+            text-align: center;
+            z-index: 1;
+        }
+        .success{
+            /*position: fixed;*/
+            /*width: 100%;*/
+            background: #48e0a4;
+            padding: 10px;
+            text-align: center;
+            z-index: 1;
+        }
+        .status{
+            display: none;
+        }
     </style>
 </head>
-<body onload="displayResult()">
+<body onload="slide()">
 <jsp:include page="html/header.html"/>
 <jsp:include page="html/uploads.html"/>
 <jsp:include page="html/apps.html"/>
 <jsp:include page="html/nav.html"/>
+
 <section id="video-container">
-    <form id="contact" action="mailDispatcher" method="post">
-        <h3>Contact Form</h3>
-        <h4>Contact us FAQ</h4>
+    <form id="contact" name="sendEmailForm" action="mailDispatcher" method="post">
+        <%
+            String message = (String) request.getAttribute("success");
+            String status = (String) request.getAttribute("status");
+            if (message != null){
+                out.println("<div class='" + status + "'>" + message + "</div>");
+            }
+        %>
+        <h3>Contact us FAQ</h3>
         <fieldset>
             <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
         </fieldset>
         <fieldset>
             <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
         </fieldset>
-        <!--<fieldset>-->
-        <!--<input placeholder="Your Phone Number (optional)" name="tel" type="tel" tabindex="3" required>-->
-        <!--</fieldset>-->
         <fieldset>
             <input placeholder="Subject" type="text" name="subject" tabindex="4" required>
         </fieldset>
@@ -184,7 +208,7 @@
             <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
-            <input name="hidden" type="hidden" id="email-sent" value="<%request.getAttribute("result");%>">
+            <input type="hidden" id="email-sent" name="hidden" value="<%request.getAttribute("result");%>">
         </fieldset>
         <fieldset>
             <button name="clear" type="reset" id="contact-clear">Clear</button>
@@ -195,7 +219,15 @@
         <!--<p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>-->
     </form>
 </section>
-<%--<jsp:include page="html/ContactUs.html"/>--%>
+<script>
+    //MAKE sent status div slide down and then up
+    function slide() {
+        setTimeout(function () {
+            $('.error').fadeOut('slow');
+            $('.success').fadeOut('slow');
+        },5000);
+    }
+</script>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 </body>
