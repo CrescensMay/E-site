@@ -223,11 +223,6 @@
     //MAKE sent status div slide down and then up
     function slide() {
         setTimeout(function () {
-            $('.error').fadeIn('slow');
-            $('.success').fadeIn('slow');
-        },2000);
-
-        setTimeout(function () {
             $('.error').fadeOut('slow');
             $('.success').fadeOut('slow');
         },5000);

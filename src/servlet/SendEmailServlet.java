@@ -58,7 +58,7 @@ public class SendEmailServlet extends HttpServlet {
                         "      <hr>\n" +
                         "      <h4 style=\"padding: 10px;\"><i>From:</i> " + request.getParameter("email") + "</h4>\n" +
                         "      <hr>\n" +
-                        "      <h4 style=\"padding: 10px;\"><i>Subject:</i> " + request.getParameter("subject") + "</h4>\n" +
+                        "      <h4 style=\"padding: 10px;\"><i>Subject:</i> " + subject+ "</h4>\n" +
                         "      <hr>\n" +
                         "      <h3 style=\"padding: 10px;\"><i>Message:</i></h3>\n" +
                         "      <p style=\"padding: 10px;\n" +
@@ -82,7 +82,7 @@ public class SendEmailServlet extends HttpServlet {
             MimeMessage mimeMessage = new MimeMessage(instance);
             try {
                 mimeMessage.setContent(message, "text/html");
-                mimeMessage.setSubject(subject);
+                mimeMessage.setSubject(subject + " (From Mysite WebSite)");
                 mimeMessage.setFrom(new InternetAddress(from));
                 mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
                 //connect to smtp server
