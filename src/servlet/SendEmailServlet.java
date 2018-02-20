@@ -104,7 +104,8 @@ public class SendEmailServlet extends HttpServlet {
                 request.setAttribute("status", status);
                 request.setAttribute("success", success);
             }
-            request.getRequestDispatcher("contactUs.jsp").include(request, response);
+//            request.getRequestDispatcher("contactUs.jsp").include(request, response);
+            request.getRequestDispatcher("contactUs.jsp").forward(request, response);
         }
     }
 

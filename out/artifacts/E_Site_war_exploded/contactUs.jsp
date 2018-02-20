@@ -1,4 +1,4 @@
-<%@ page import="java.util.Objects" %>
+<%@ page import="java.util.Calendar" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -7,6 +7,7 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="screen">
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Contact Us</title>
 
     <style>
@@ -135,6 +136,11 @@
 
         .copyright {
             text-align: center;
+            color: #000000;
+        }
+        .copyright a{
+            text-decoration: underline;
+            color: #000000;
         }
 
         #contact input:focus,
@@ -177,6 +183,15 @@
         .status{
             display: none;
         }
+        .ok{
+            position: fixed;
+            width: 380px;
+            background: #b6e6b7;
+            padding: 10px;
+            margin-top: 20%;
+            color: #000;
+            z-index: 1;
+        }
     </style>
 </head>
 <body onload="slide()">
@@ -191,9 +206,11 @@
             String message = (String) request.getAttribute("success");
             String status = (String) request.getAttribute("status");
             if (message != null){
+
                 out.println("<div class='" + status + "'>" + message + "</div>");
             }
         %>
+        <%--<%out.println("<div class='ok'>'You Can Go to main page for search by clicking the logo or menu icon!'</div>");%>--%>
         <h3>Contact us FAQ</h3>
         <fieldset>
             <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
@@ -202,13 +219,10 @@
             <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
         </fieldset>
         <fieldset>
-            <input placeholder="Subject" type="text" name="subject" tabindex="4" required>
+            <input placeholder="Subject" type="text" name="subject" tabindex="3" required>
         </fieldset>
         <fieldset>
-            <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-            <input type="hidden" id="email-sent" name="hidden" value="<%request.getAttribute("result");%>">
+            <textarea placeholder="Type your message here...." name="message" tabindex="4" required></textarea>
         </fieldset>
         <fieldset>
             <button name="clear" type="reset" id="contact-clear">Clear</button>
@@ -216,19 +230,20 @@
         <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
         </fieldset>
-        <!--<p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>-->
+        <p class="copyright">&copy; <%=Calendar.getInstance().get(Calendar.YEAR)%> Designed by <a href="https://github.com/CrescensMay" target="_blank" title="Projects/GitHub">Crescens.K</a></p>
     </form>
 </section>
 <script>
-    //MAKE sent status div slide down and then up
-    function slide() {
-        setTimeout(function () {
-            $('.error').fadeOut('slow');
-            $('.success').fadeOut('slow');
-        },5000);
-    }
+    var $searbtn = $('#searchSubmit');
+    var $searchBar = $('#searchField');
+    $searchBar.prop('disabled', true);
+    $searbtn.prop('disabled', true);
+    setTimeout(function () {
+        swal('Notification', 'You Can Go to Homepage for Video Search by Clicking the Logo or Menu Icon!');
+//        alert('You Can Go to main page for search by clicking the logo or menu icon!').fadeIn(3000).fadeOut(3000);
+    },20000);
 </script>
-
+<%--<script type="text/javascript" src="js/videoSearch.js"></script>--%>
 <script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>

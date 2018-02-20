@@ -61,8 +61,6 @@ $('#menu-icon').click(function () {
     $section.toggleClass('toggleContainer');
     //marge left upload box when menu opened
     $upload.toggleClass('toggleUploadBox');
-    //align text
-    // $('.status').toggleClass('successfullySent');
     //marge left forum form
     // $forum.toggleClass('marginFormOnToggle');
 });
@@ -108,4 +106,17 @@ function postComment() {
     request.send();
 }
 
+//selected background color
+$('.menu-links').find('li').find('a').click(function () {
+    $('.select').removeClass('select');
+    $(this).addClass('select');
+});
+
+//MAKE sent status div slide down and then up
+function slide() {
+    setTimeout(function () {
+        $('.error').fadeOut('slow');
+        $('.success').fadeOut('slow');
+    },5000);
+}
 

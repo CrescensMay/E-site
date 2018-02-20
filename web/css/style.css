@@ -170,7 +170,6 @@ input[type="text"]:not(.input){
     position: fixed;
     z-index: 1;
     margin-top: 5.6em;
-    /*position: absolute;*/
     background: #f7f6ff;
     letter-spacing: .5px;
     line-height: 35px;
@@ -243,8 +242,6 @@ footer li a:hover{
     padding: 10px 10px 10px 10px;
     background: #b6e6b7;
     color: #ffffff;
-    /*margin: auto;*/
-    /*width: 75%;*/
 }
 /*put buttons in the center of the div*/
 #btn{
@@ -255,16 +252,12 @@ footer li a:hover{
     margin-left: 300px;
 }
 /*design result list*/
-#result-video{
-    /*margin-left: 60px;*/
-}
 #result-video li{
     border-bottom: 1px #ccc dotted;
     overflow: auto;
 }
 /*video heading design*/
 .video-heading p{
-    /*position: relative;*/
     margin-left: 2em;
 }
 /*work with list left from data output*/
@@ -296,7 +289,6 @@ footer li a:hover{
     text-align: center;
 }
 .pagingLoad-btn{
-    /*padding: 8px 13px;*/
     border: none;
     color: #ffffff;
     width: 500px;
@@ -359,7 +351,6 @@ footer li a:hover{
 .book-item-main{
     margin-top: 15px;
     margin-bottom: 20px;
-    /*margin-left: 1px;*/
     float: left;
     overflow: auto;
 }
@@ -449,7 +440,6 @@ footer li a:hover{
     position: relative;
     right: 20px;
     width: 300px;
-    /*background: #ffffff;*/
 }
 /*design the update box*/
 #ebook-div{
@@ -458,7 +448,6 @@ footer li a:hover{
     width: 350px;
     height: 350px;
     margin-top: 10.4em;
-    /*margin-left: 35%;*/
     padding: 30px;
     left: 35%;
     background: #f4fffc;
@@ -512,9 +501,7 @@ footer li a:hover{
     background: #ffa6a0;
     cursor: pointer;
 }
-/*#list-news li:active {*/
-    /*color: #ffa6a0;*/
-/*}*/
+
 /*design load data news for main page(home)*/
 .list-item-news{
     margin-top: 15px;
@@ -535,7 +522,6 @@ footer li a:hover{
     font-size: 14px;
     margin-left: 2px;
     position: relative;
-    /*height: 25px;*/
 }
 .list-item-news a{
     color: #ffffff;
@@ -557,15 +543,14 @@ footer li a:hover{
 .selected{
     background:#ffa6a0;
 }
+.select{
+    background: #ffffff;
+}
 /*design forum form*/
 #forum-form{
     margin-left: 34%;
     top: 20%;
     line-height: 35px;
-}
-/*design result post area*/
-#result-post{
-    /*overflow-x: hidden;*/
 }
 /*design post ul children*/
 .post-item-main ul li {
@@ -579,14 +564,3 @@ footer li a:hover{
 .successfullySent{
     text-align: left;
 }
-/*design user comment input*/
-/*#user-comment{*/
-    /*display: block;*/
-    /*border: 1px solid #ffa6a0;*/
-    /*width: 350px;*/
-    /*padding: 10px;*/
-    /*font-size: 14px;*/
-    /*overflow: hidden;*/
-    /*!*resize: none;*!*/
-    /*!*border-radius: 40px;*!*/
-/*}*/

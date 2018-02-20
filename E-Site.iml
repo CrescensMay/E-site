@@ -26,5 +26,6 @@
     <orderEntry type="library" name="src" level="project" />
     <orderEntry type="library" name="com.github.marlonlom:timeago:3.0.1" level="project" />
     <orderEntry type="library" name="javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" name="sweetalert" level="application" />
   </component>
 </module>

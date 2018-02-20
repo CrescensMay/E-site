@@ -6,7 +6,7 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="screen">
     <script src="js/jquery.fancybox.min.js"></script>
-    <title>E-Book</title>
+    <title>Upload - Music</title>
 </head>
 <body>
 <jsp:include page="html/header.html"/>
