@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="screen">
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>News</title>
+    <title>About Us</title>
 </head>
-<body onload="loadNews()">
+<body>
 <jsp:include page="html/header.html"/>
 <jsp:include page="html/uploads.html"/>
 <jsp:include page="html/apps.html"/>
-<jsp:include page="html/newNav.html"/>
 <jsp:include page="html/nav.html"/>
-<jsp:include page="html/newsResults.html"/>
+<jsp:include page="html/aboutUs.html"/>
 
 <script>
+    var $searbtn = $('#searchSubmit');
+    var $searchBar = $('#searchField');
+    $searchBar.prop('disabled', true);
+    $searbtn.prop('disabled', true);
     setTimeout(function () {
-        swal('Notification', 'You Can Search Headlines News');
-//        alert('You Can Go to main page for search by clicking the logo or menu icon!').fadeIn(3000).fadeOut(3000);
+        swal('Notification', 'You Can Go to Homepage for Video Search by Clicking the Logo or Menu Icon!');
     },20000);
 </script>
-<script type="text/javascript" src="js/bbc.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <%--<script type="text/javascript" src="js/videoSearch.js"></script>--%>
 </body>
 </html>
+

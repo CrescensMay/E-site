@@ -107,7 +107,7 @@ input[type="text"]:not(.input){
     width: 300px;
     z-index: 1;
     margin-top: 5.6em;
-    height: 560px;
+    height: 565px;
 }
 /*change nav link color to black*/
 #nav-footer a{
@@ -563,4 +563,17 @@ footer li a:hover{
 /*margin text for sent successfully*/
 .successfullySent{
     text-align: left;
+}
+/*design about section page*/
+#header-about {
+    width: 100%;
+}
+#header-about h1,h2 {
+    text-align: center;
+}
+#para-about{
+    width: 510px;
+    line-height: 25px;
+    font-size: 17px;
+    margin-left: 30%;
 }
