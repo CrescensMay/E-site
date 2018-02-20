@@ -37,7 +37,8 @@ public class SendEmailServlet extends HttpServlet {
             int port = 465;
 
             String from = "programmingtest90@gmail.com" ;
-            String to = "programmingtest90@gmail.com";
+//            String to = "programmingtest90@gmail.com";
+            String to = "2148165900@qq.com";
             String subject = null;
             String message = null;
 
