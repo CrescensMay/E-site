@@ -31,14 +31,14 @@ public class SendEmailServlet extends HttpServlet {
 
         if (request.getParameter("submit") != null){
             //properties to be read from external file or database
-            String username = "programmingtest90@gmail.com";
-            String password = "@programmingtest90";
+            String username = "...@gmail.com";
+            String password = "...";
             String host = "smtp.gmail.com";
             int port = 465;
 
-            String from = "programmingtest90@gmail.com" ;
+            String from = "...@gmail.com" ;
 //            String to = "programmingtest90@gmail.com";
-            String to = "2148165900@qq.com";
+            String to = "...@qq.com";
             String subject = null;
             String message = null;
 
